@@ -8,8 +8,20 @@ from .config import QUESTIONS_PATH, SUBTESTS
 
 
 def load_items() -> list[dict[str, Any]]:
-    data = json.loads(QUESTIONS_PATH.read_text(encoding="utf-8"))
-    return data["items"]
+    """Load official bank.json if present, else merge bank_*.json shards."""
+    if QUESTIONS_PATH.exists():
+        data = json.loads(QUESTIONS_PATH.read_text(encoding="utf-8"))
+        return data["items"]
+    items: list[dict[str, Any]] = []
+    for path in sorted(QUESTIONS_PATH.parent.glob("bank_*.json")):
+        payload = json.loads(path.read_text(encoding="utf-8"))
+        if isinstance(payload, list):
+            items.extend(payload)
+        else:
+            items.extend(payload.get("items") or [])
+    if not items:
+        raise FileNotFoundError(f"No question bank at {QUESTIONS_PATH} or bank_*.json shards")
+    return items
 
 
 ITEMS = load_items()
