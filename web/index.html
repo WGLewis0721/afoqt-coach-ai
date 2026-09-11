@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AFOQT Coach</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <span class="mark">AFOQT</span>
+      <span class="name">Coach</span>
+      <span class="sub">cyber / software track · local study · quiz · readiness</span>
+    </div>
+    <div class="status" id="llmStatus">checking LLM…</div>
+  </header>
+
+  <nav class="tabs">
+    <button data-tab="dash" class="on">Readiness</button>
+    <button data-tab="study">Study</button>
+    <button data-tab="quiz">Quiz</button>
+    <button data-tab="coach">Coach</button>
+  </nav>
+
+  <main>
+    <section id="tab-dash" class="panel on">
+      <div class="row">
+        <label>Target track
+          <select id="track">
+            <option value="cyber_software" selected>Cyber / software (17X, 62E)</option>
+            <option value="nonrated">Other non-rated officer</option>
+            <option value="pilot">Pilot / RPA</option>
+            <option value="cso">Combat Systems Officer</option>
+            <option value="abm">Air Battle Manager</option>
+            <option value="undecided">Undecided</option>
+          </select>
+        </label>
+        <button id="resetBtn" class="ghost">Reset progress</button>
+      </div>
+      <p class="disclaimer" id="disclaimer"></p>
+      <h2>Composites</h2>
+      <div id="composites" class="cards"></div>
+      <h2>Next actions</h2>
+      <ol id="actions" class="actions"></ol>
+      <h2>Subtests</h2>
+      <div id="subtests" class="table-wrap"></div>
+    </section>
+
+    <section id="tab-study" class="panel">
+      <div class="row">
+        <label>Topic
+          <select id="studyTopic">
+            <option value="cyber_software">Cyber / software track</option>
+            <option value="overview">Overview & scoring</option>
+            <option value="verbal_analogies">Verbal Analogies</option>
+            <option value="word_knowledge">Word Knowledge</option>
+            <option value="reading_comprehension">Reading Comprehension</option>
+            <option value="arithmetic_reasoning">Arithmetic Reasoning</option>
+            <option value="math_knowledge">Math Knowledge</option>
+            <option value="physical_science">Physical Science</option>
+            <option value="aviation_information">Aviation Information</option>
+            <option value="instrument_comprehension">Instrument Comprehension</option>
+            <option value="table_reading">Table Reading</option>
+            <option value="block_counting">Block Counting</option>
+            <option value="situational_judgment">Situational Judgment</option>
+            <option value="test_day">Test day & plan</option>
+          </select>
+        </label>
+        <button id="studyAsk">Explain this section</button>
+      </div>
+      <article id="studyOut" class="prose"></article>
+    </section>
+
+    <section id="tab-quiz" class="panel">
+      <div class="row wrap">
+        <label>Subtest
+          <select id="quizSub">
+            <option value="mixed">Mixed</option>
+          </select>
+        </label>
+        <label>Items
+          <select id="quizN">
+            <option>5</option>
+            <option selected>8</option>
+            <option>10</option>
+            <option>12</option>
+          </select>
+        </label>
+        <label>Difficulty
+          <select id="quizDiff">
+            <option value="any">Any</option>
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+        </label>
+        <label class="check"><input type="checkbox" id="quizTimed" checked /> Timed</label>
+        <label class="check"><input type="checkbox" id="quizLlm" /> Add LLM items</label>
+        <button id="startQuiz">Start</button>
+      </div>
+      <div id="quizMeta" class="muted"></div>
+      <div id="quizBox"></div>
+    </section>
+
+    <section id="tab-coach" class="panel">
+      <div class="row">
+        <label>Ground in
+          <select id="coachSub">
+            <option value="">General</option>
+          </select>
+        </label>
+      </div>
+      <div id="chatLog" class="chat"></div>
+      <form id="chatForm" class="chat-form">
+        <input id="chatInput" autocomplete="off" placeholder="Ask for a rule, a worked problem, or a 5-item drill…" />
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    Original practice items only. Not official AFOQT content. Confirm policy with your testing office.
+    Pair this app with official OATTS familiarization software.
+  </footer>
+  <script src="/static/app.js"></script>
+</body>
+</html>
