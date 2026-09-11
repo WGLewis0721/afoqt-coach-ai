@@ -13,7 +13,7 @@ This is **not** official AFOQT content and does **not** contain live test items.
 ## What you get
 
 - **Study pack** a local LLM can use as grounding (`app/knowledge/`)
-- **Quiz engine** from an original item bank, optional Ollama-generated extras
+- **Quiz engine** from an original item bank (108 items across `app/questions/bank_*.json`), optional Ollama-generated extras
 - **Readiness tracker** in `data/progress.json` (practice percent is not an official percentile)
 
 Study bars used in the app (not published AFSC cut scores):
@@ -108,15 +108,19 @@ Progress is local: `data/progress.json`. It is gitignored.
 ```
 afoqt-coach-ai/
   app/
-    knowledge/          LLM grounding (SYSTEM.md, CYBER_TRACK.md, …)
-    questions/bank.json original practice items
-    main.py             FastAPI
-  web/                  dashboard
-  data/                 created at runtime
+    knowledge/                 LLM grounding (SYSTEM.md, CYBER_TRACK.md, …)
+    questions/bank_verbal.json original VA/WK/RC items
+    questions/bank_quant.json  original AR/MK items
+    questions/bank_other.json  original PS/AI/IC/BC/TR/SJ items
+    main.py                    FastAPI
+  web/                         dashboard
+  data/                        created at runtime
   run.sh
-  COMPANION_PROMPT.md   paste into Claude Code
-  CLAUDE.md             Claude Code project notes
+  COMPANION_PROMPT.md          paste into Claude Code
+  CLAUDE.md                    Claude Code project notes
 ```
+
+`app/bank.py` loads `questions/bank.json` if you add one, otherwise it merges the `bank_*.json` shards.
 
 Point Open WebUI or another local frontend at `app/knowledge/` and use `app/knowledge/SYSTEM.md` as the system prompt.
 
