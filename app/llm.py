@@ -47,7 +47,7 @@ def chat(
         "options": {"temperature": 0.3},
     }
     try:
-        r = httpx.post(f"{OLLAMA_URL}/api/chat", json=payload, timeout=120)
+        r = httpx.post(f"{OLLAMA_URL}/api/chat", json=payload, timeout=300)
         r.raise_for_status()
         content = r.json().get("message", {}).get("content") or ""
         return {"provider": "ollama", "model": chosen, "content": content, "ollama": status}

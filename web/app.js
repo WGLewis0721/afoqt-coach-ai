@@ -7,6 +7,7 @@ const state = {
   timerId: null,
   remaining: 0,
   chat: [],
+  flash: { allCards: [], cards: [], idx: 0, deck: "all" },
 };
 
 document.querySelectorAll(".tabs button").forEach((btn) => {
@@ -27,24 +28,220 @@ async function api(path, opts) {
   return res.json();
 }
 
+const COMPOSITE_LABELS = {
+  tech_board: "Tech Board",
+  quantitative: "Quantitative",
+  academic: "Academic",
+  verbal: "Verbal",
+  pilot: "Pilot",
+  cso: "CSO",
+  abm: "ABM",
+};
+
+const BAND_LABELS = {
+  ready: "Ready!",
+  borderline: "Almost there",
+  weak: "Keep practicing",
+  untested: "Not started yet",
+};
+
 function bandEl(band) {
-  return `<span class="band ${band}">${band}</span>`;
+  const label = BAND_LABELS[band] || band;
+  return `<span class="band ${band}">${label}</span>`;
+}
+
+const WaitGame = (() => {
+  let container = null;
+  let intervalId = null;
+  let score = 0;
+  const colors = ["var(--accent)", "var(--gold)", "var(--go)", "var(--warn)"];
+
+  function spawnBubble(field) {
+    const b = document.createElement("button");
+    b.type = "button";
+    b.className = "wait-bubble";
+    b.setAttribute("aria-label", "Pop");
+    const size = 34 + Math.random() * 30;
+    b.style.width = `${size}px`;
+    b.style.height = `${size}px`;
+    b.style.left = `${Math.random() * 82}%`;
+    b.style.background = colors[Math.floor(Math.random() * colors.length)];
+    b.style.animationDuration = `${2.4 + Math.random() * 1.4}s`;
+    const pop = () => {
+      score += 1;
+      updateScore();
+      b.remove();
+    };
+    b.addEventListener("click", pop);
+    b.addEventListener("animationend", () => b.remove());
+    field.appendChild(b);
+  }
+
+  function updateScore() {
+    if (!container) return;
+    const el = container.querySelector(".wait-game-score");
+    if (el) el.textContent = `Popped: ${score}`;
+  }
+
+  function setStatus(text) {
+    if (!container) return;
+    const el = container.querySelector(".wait-game-time");
+    if (el) el.textContent = text;
+  }
+
+  function mount(target, label) {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return false;
+    score = 0;
+    target.innerHTML = "";
+    container = document.createElement("div");
+    container.className = "wait-game";
+    container.innerHTML = `
+      <div class="wait-game-head">
+        <span class="wait-game-label">${label || "While you wait, pop a few bubbles ✨"}</span>
+        <span class="wait-game-meta"><span class="wait-game-time"></span> · <span class="wait-game-score">Popped: 0</span></span>
+      </div>
+      <div class="wait-game-field"></div>
+    `;
+    target.appendChild(container);
+    const field = container.querySelector(".wait-game-field");
+    spawnBubble(field);
+    intervalId = setInterval(() => spawnBubble(field), 550);
+    return true;
+  }
+
+  function unmount() {
+    if (intervalId) clearInterval(intervalId);
+    intervalId = null;
+    container = null;
+  }
+
+  return { mount, unmount, setStatus };
+})();
+
+function tickingLabel(base, onTick) {
+  const started = Date.now();
+  onTick(`${base} (0s)`);
+  const id = setInterval(() => {
+    const s = Math.round((Date.now() - started) / 1000);
+    onTick(`${base} (${s}s)${s > 20 ? " — local CPU inference, can take a couple minutes" : ""}`);
+  }, 1000);
+  return () => clearInterval(id);
+}
+
+function mdInline(s) {
+  s = s.replace(/`([^`]+)`/g, (_, c) => `<code>${c}</code>`);
+  s = s.replace(/\*\*([^*]+)\*\*/g, (_, b) => `<strong>${b}</strong>`);
+  s = s.replace(/(^|[^*])\*([^*\n]+)\*(?!\*)/g, (_, pre, i) => `${pre}<em>${i}</em>`);
+  s = s.replace(/\\([\\`*_{}[\]()#+.!>~-])/g, "$1");
+  return s;
+}
+
+function splitTableRow(line) {
+  const cells = line.split("|");
+  if (cells[0].trim() === "") cells.shift();
+  if (cells.length && cells[cells.length - 1].trim() === "") cells.pop();
+  return cells.map((c) => c.trim());
+}
+
+function renderMarkdown(src) {
+  const lines = escapeHtml(src).split("\n");
+  let html = "";
+  let para = [];
+  const flushPara = () => {
+    if (para.length) {
+      html += `<p>${mdInline(para.join(" "))}</p>`;
+      para = [];
+    }
+  };
+  let i = 0;
+  while (i < lines.length) {
+    const line = lines[i];
+    const heading = line.match(/^(#{1,6})\s+(.*)$/);
+    const ul = line.match(/^\s*[-*]\s+(.*)$/);
+    const ol = line.match(/^\s*\d+\.\s+(.*)$/);
+    const isPipeRow = /^\s*\|.*\|\s*$/.test(line);
+    const nextIsSep = isPipeRow && lines[i + 1] && /^\s*\|?[\s:|-]+\|?\s*$/.test(lines[i + 1]) && lines[i + 1].includes("-");
+
+    if (!line.trim()) {
+      flushPara();
+      i++;
+      continue;
+    }
+
+    if (heading) {
+      flushPara();
+      const level = heading[1].length;
+      html += `<h${level}>${mdInline(heading[2])}</h${level}>`;
+      i++;
+      continue;
+    }
+
+    if (nextIsSep) {
+      flushPara();
+      const headerCells = splitTableRow(line);
+      let j = i + 2;
+      const rows = [];
+      while (j < lines.length && /^\s*\|.*\|\s*$/.test(lines[j])) {
+        rows.push(splitTableRow(lines[j]));
+        j++;
+      }
+      html +=
+        "<table><thead><tr>" +
+        headerCells.map((c) => `<th>${mdInline(c)}</th>`).join("") +
+        "</tr></thead><tbody>" +
+        rows.map((r) => "<tr>" + r.map((c) => `<td>${mdInline(c)}</td>`).join("") + "</tr>").join("") +
+        "</tbody></table>";
+      i = j;
+      continue;
+    }
+
+    if (ul) {
+      flushPara();
+      const items = [];
+      while (i < lines.length && lines[i].match(/^\s*[-*]\s+(.*)$/)) {
+        items.push(lines[i].match(/^\s*[-*]\s+(.*)$/)[1]);
+        i++;
+      }
+      html += "<ul>" + items.map((it) => `<li>${mdInline(it)}</li>`).join("") + "</ul>";
+      continue;
+    }
+
+    if (ol) {
+      flushPara();
+      const items = [];
+      while (i < lines.length && lines[i].match(/^\s*\d+\.\s+(.*)$/)) {
+        items.push(lines[i].match(/^\s*\d+\.\s+(.*)$/)[1]);
+        i++;
+      }
+      html += "<ol>" + items.map((it) => `<li>${mdInline(it)}</li>`).join("") + "</ol>";
+      continue;
+    }
+
+    para.push(line.trim());
+    i++;
+  }
+  flushPara();
+  return html;
 }
 
 async function refreshHealth() {
   try {
     const h = await api("/api/health");
     const el = $("#llmStatus");
+    el.classList.remove("status-ok", "status-warn", "status-bad");
     if (h.ollama && h.ollama.ok) {
       const models = (h.ollama.models || []).join(", ") || "model ready";
       el.textContent = "Ollama: " + models;
-      el.style.color = "#3d9a6a";
+      el.classList.add("status-ok");
     } else {
       el.textContent = "Ollama offline — bank quizzes still work";
-      el.style.color = "#d4a017";
+      el.classList.add("status-warn");
     }
   } catch {
-    $("#llmStatus").textContent = "API down";
+    const el = $("#llmStatus");
+    el.textContent = "API down";
+    el.classList.remove("status-ok", "status-warn");
+    el.classList.add("status-bad");
   }
 }
 
@@ -63,7 +260,7 @@ async function refreshReady() {
       const comp = c.competitive_percentile != null ? ` \u00b7 study bar ~${c.competitive_percentile}+` : "";
       const dim = primary.has(name) ? "" : " dim";
       const tag = primary.has(name) ? "" : `<div class="muted">not used for cyber/software classification</div>`;
-      return `<div class="card${dim}"><h3>${name.replace("_", " ")}</h3>${bandEl(c.band)}<div>${pct}</div><div class="muted">${c.coverage}<br/>${floor}${comp}</div>${tag}</div>`;
+      return `<div class="card${dim}"><h3>${COMPOSITE_LABELS[name] || name.replace("_", " ")}</h3>${bandEl(c.band)}<div>${pct}</div><div class="muted">${c.coverage}<br/>${floor}${comp}</div>${tag}</div>`;
     })
     .join("");
   $("#composites").innerHTML = cards;
@@ -91,7 +288,7 @@ $("#track").addEventListener("change", async (e) => {
 });
 
 $("#resetBtn").addEventListener("click", async () => {
-  if (!confirm("Wipe local readiness history?")) return;
+  if (!confirm("Clear all your progress? This can't be undone.")) return;
   await api("/api/reset", { method: "POST" });
   refreshReady();
 });
@@ -100,14 +297,19 @@ async function loadStudyPack() {
   const topic = $("#studyTopic").value;
   $("#studyOut").textContent = "Loading pack\u2026";
   const pack = await api("/api/knowledge?topic=" + encodeURIComponent(topic));
-  $("#studyOut").textContent = pack.content.replace(/^\n+/, "");
+  $("#studyOut").innerHTML = renderMarkdown(pack.content.replace(/^\n+/, ""));
 }
 
 $("#studyTopic").addEventListener("change", loadStudyPack);
 
 $("#studyAsk").addEventListener("click", async () => {
   const topic = $("#studyTopic").value;
-  $("#studyOut").textContent = "Coaching\u2026";
+  const studyOut = $("#studyOut");
+  const gameOn = WaitGame.mount(studyOut, "Pop a few bubbles while I put this together \u2728");
+  const stopTicker = tickingLabel("Coaching\u2026", (label) => {
+    if (gameOn) WaitGame.setStatus(label);
+    else studyOut.textContent = label;
+  });
   const messages = [
     {
       role: "user",
@@ -115,11 +317,19 @@ $("#studyAsk").addEventListener("click", async () => {
         "Teach this AFOQT section as a compact study brief: key rules, 2 worked examples, and the real-test pace. Then give me 3 check questions with answers at the bottom.",
     },
   ];
-  const res = await api("/api/chat", {
-    method: "POST",
-    body: JSON.stringify({ messages, subtest: topic }),
-  });
-  $("#studyOut").textContent = (res.provider === "fallback" ? "[offline excerpt]\n\n" : "") + res.content;
+  try {
+    const res = await api("/api/chat", {
+      method: "POST",
+      body: JSON.stringify({ messages, subtest: topic }),
+    });
+    const prefix = res.provider === "fallback" ? "**[offline excerpt]**\n\n" : "";
+    studyOut.innerHTML = renderMarkdown(prefix + res.content);
+  } catch (err) {
+    studyOut.textContent = "Coaching request failed: " + err.message;
+  } finally {
+    stopTicker();
+    WaitGame.unmount();
+  }
 });
 
 function stopTimer() {
@@ -153,15 +363,35 @@ async function startQuiz() {
     difficulty: $("#quizDiff").value,
     use_llm: $("#quizLlm").checked,
   };
-  $("#quizBox").textContent = "Building quiz\u2026";
-  const quiz = await api("/api/quiz", { method: "POST", body: JSON.stringify(body) });
+  const quizBox = $("#quizBox");
+  const useLlm = body.use_llm;
+  let stopTicker = () => {};
+  let gameOn = false;
+  if (useLlm) {
+    gameOn = WaitGame.mount(quizBox, "Pop a few bubbles while I build your quiz \u2728");
+    stopTicker = tickingLabel("Building quiz\u2026", (label) => {
+      if (gameOn) WaitGame.setStatus(label);
+      else quizBox.textContent = label;
+    });
+  } else {
+    quizBox.textContent = "Building quiz\u2026";
+  }
+  let quiz;
+  try {
+    quiz = await api("/api/quiz", { method: "POST", body: JSON.stringify(body) });
+  } finally {
+    stopTicker();
+    if (gameOn) WaitGame.unmount();
+  }
   state.quiz = quiz;
   state.startedAt = Date.now();
   const timed = $("#quizTimed").checked;
   state.remaining = timed ? quiz.timed_seconds : 0;
-  $("#quizMeta").innerHTML = timed
+  const metaLine = timed
     ? `${quiz.items.length} items \u00b7 target ${quiz.target_pace_sec_per_item}s each \u00b7 <span class="timer" id="timer">${formatTime(state.remaining)}</span>`
     : `${quiz.items.length} items \u00b7 untimed \u00b7 target ${quiz.target_pace_sec_per_item}s each`;
+  const noteLine = quiz.note ? `<div class="quiz-note">${escapeHtml(quiz.note)}</div>` : "";
+  $("#quizMeta").innerHTML = metaLine + noteLine;
   $("#quizBox").innerHTML =
     quiz.items
       .map((item, idx) => {
@@ -169,9 +399,10 @@ async function startQuiz() {
           .map((c) => `<label class="choice"><input type="radio" name="q${idx}" value="${c.trim()[0]}" /> ${c}</label>`)
           .join("");
         const vis = item.visual ? `<pre>${item.visual}</pre>` : "";
-        return `<div class="q" data-id="${item.id}" data-idx="${idx}"><div class="stem">${idx + 1}. ${item.stem}</div>${vis}${choices}</div>`;
+        const diffTag = item.difficulty ? `<span class="diff-tag ${item.difficulty}">${item.difficulty}</span>` : "";
+        return `<div class="q" data-id="${item.id}" data-idx="${idx}"><div class="stem">${idx + 1}. ${item.stem} ${diffTag}</div>${vis}${choices}</div>`;
       })
-      .join("") + `<button id="submitQuiz">Score it</button>`;
+      .join("") + `<button id="submitQuiz">See my score</button>`;
   $("#submitQuiz").addEventListener("click", () => submitQuiz(false));
   if (timed) state.timerId = setInterval(tick, 1000);
 }
@@ -214,24 +445,122 @@ async function submitQuiz(auto) {
   refreshReady();
 }
 
+function shuffleArray(arr) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+async function loadFlashcards() {
+  const data = await api("/api/flashcards");
+  state.flash.allCards = data.cards;
+  const sel = $("#cardDeck");
+  sel.innerHTML =
+    `<option value="all">All decks (${data.cards.length})</option>` +
+    data.decks.map((d) => `<option value="${d.id}">${d.label} (${d.count})</option>`).join("");
+  pickDeck("all");
+}
+
+function pickDeck(deck) {
+  const pool = deck === "all" ? state.flash.allCards : state.flash.allCards.filter((c) => c.deck === deck);
+  state.flash.deck = deck;
+  state.flash.cards = shuffleArray(pool);
+  state.flash.idx = 0;
+  renderFlashcard();
+}
+
+function renderFlashcard() {
+  const cards = state.flash.cards;
+  const card = document.getElementById("flashcard");
+  card.classList.remove("flipped");
+  if (!cards.length) {
+    $("#cardMeta").textContent = "No cards in this deck yet.";
+    $("#cardFront").textContent = "";
+    $("#cardBack").textContent = "";
+    return;
+  }
+  const c = cards[state.flash.idx];
+  $("#cardMeta").textContent = `Card ${state.flash.idx + 1} of ${cards.length}`;
+  $("#cardFront").textContent = c.front;
+  $("#cardBack").textContent = c.back;
+}
+
+function flipCard() {
+  document.getElementById("flashcard").classList.toggle("flipped");
+}
+
+function nextCard() {
+  if (!state.flash.cards.length) return;
+  state.flash.idx = (state.flash.idx + 1) % state.flash.cards.length;
+  renderFlashcard();
+}
+
+function prevCard() {
+  if (!state.flash.cards.length) return;
+  state.flash.idx = (state.flash.idx - 1 + state.flash.cards.length) % state.flash.cards.length;
+  renderFlashcard();
+}
+
+$("#cardDeck").addEventListener("change", (e) => pickDeck(e.target.value));
+$("#shuffleCards").addEventListener("click", () => pickDeck(state.flash.deck));
+$("#cardFlip").addEventListener("click", flipCard);
+$("#cardNext").addEventListener("click", nextCard);
+$("#cardPrev").addEventListener("click", prevCard);
+$("#flashcard").addEventListener("click", flipCard);
+$("#flashcard").addEventListener("keydown", (e) => {
+  if (e.key === " " || e.key === "Enter") {
+    e.preventDefault();
+    flipCard();
+  } else if (e.key === "ArrowRight") {
+    nextCard();
+  } else if (e.key === "ArrowLeft") {
+    prevCard();
+  }
+});
+
 $("#chatForm").addEventListener("submit", async (e) => {
   e.preventDefault();
   const text = $("#chatInput").value.trim();
   if (!text) return;
   $("#chatInput").value = "";
+  const outgoing = state.chat.slice();
+  outgoing.push({ role: "user", content: text });
   state.chat.push({ role: "user", content: text });
   renderChat();
-  const res = await api("/api/chat", {
-    method: "POST",
-    body: JSON.stringify({ messages: state.chat, subtest: $("#coachSub").value || null }),
+
+  const waitEl = $("#chatWait");
+  waitEl.hidden = false;
+  const gameOn = WaitGame.mount(waitEl, "Pop a few bubbles while I think ✨");
+  const stopTicker = tickingLabel("Thinking…", (label) => {
+    if (gameOn) WaitGame.setStatus(label);
+    else waitEl.textContent = label;
   });
-  state.chat.push({ role: "assistant", content: res.content });
-  renderChat();
+  try {
+    const res = await api("/api/chat", {
+      method: "POST",
+      body: JSON.stringify({ messages: outgoing, subtest: $("#coachSub").value || null }),
+    });
+    state.chat.push({ role: "assistant", content: res.content });
+  } catch (err) {
+    state.chat.push({ role: "assistant", content: "Request failed: " + err.message });
+  } finally {
+    stopTicker();
+    WaitGame.unmount();
+    waitEl.hidden = true;
+    waitEl.innerHTML = "";
+    renderChat();
+  }
 });
 
 function renderChat() {
   $("#chatLog").innerHTML = state.chat
-    .map((m) => `<div class="bubble ${m.role === "user" ? "user" : "bot"}">${escapeHtml(m.content)}</div>`)
+    .map((m) => {
+      const body = m.role === "user" ? escapeHtml(m.content) : renderMarkdown(m.content);
+      return `<div class="bubble ${m.role === "user" ? "user" : "bot"}">${body}</div>`;
+    })
     .join("");
   $("#chatLog").scrollTop = $("#chatLog").scrollHeight;
 }
@@ -246,4 +575,5 @@ function escapeHtml(s) {
   fillSelects(state.meta);
   await refreshReady();
   try { await loadStudyPack(); } catch (e) { /* pack loads when Study tab is used */ }
+  try { await loadFlashcards(); } catch (e) { /* flashcards optional on init */ }
 })();

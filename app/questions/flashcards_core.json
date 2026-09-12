@@ -1,0 +1,1118 @@
+[
+  {
+    "id": "wp-pre-01",
+    "deck": "word_parts",
+    "front": "Prefix: a-/an-",
+    "back": "Without (amoral)"
+  },
+  {
+    "id": "wp-pre-02",
+    "deck": "word_parts",
+    "front": "Prefix: anti-",
+    "back": "Against"
+  },
+  {
+    "id": "wp-pre-03",
+    "deck": "word_parts",
+    "front": "Prefix: auto-",
+    "back": "Self"
+  },
+  {
+    "id": "wp-pre-04",
+    "deck": "word_parts",
+    "front": "Prefix: bene-",
+    "back": "Good"
+  },
+  {
+    "id": "wp-pre-05",
+    "deck": "word_parts",
+    "front": "Prefix: circum-",
+    "back": "Around"
+  },
+  {
+    "id": "wp-pre-06",
+    "deck": "word_parts",
+    "front": "Prefix: contra-/counter-",
+    "back": "Against"
+  },
+  {
+    "id": "wp-pre-07",
+    "deck": "word_parts",
+    "front": "Prefix: de-",
+    "back": "Down/away"
+  },
+  {
+    "id": "wp-pre-08",
+    "deck": "word_parts",
+    "front": "Prefix: dis-",
+    "back": "Not/apart"
+  },
+  {
+    "id": "wp-pre-09",
+    "deck": "word_parts",
+    "front": "Prefix: ex-",
+    "back": "Out"
+  },
+  {
+    "id": "wp-pre-10",
+    "deck": "word_parts",
+    "front": "Prefix: extra-",
+    "back": "Beyond"
+  },
+  {
+    "id": "wp-pre-11",
+    "deck": "word_parts",
+    "front": "Prefix: hyper-",
+    "back": "Over"
+  },
+  {
+    "id": "wp-pre-12",
+    "deck": "word_parts",
+    "front": "Prefix: hypo-",
+    "back": "Under"
+  },
+  {
+    "id": "wp-pre-13",
+    "deck": "word_parts",
+    "front": "Prefix: in-/im-/il-/ir-",
+    "back": "Not or into"
+  },
+  {
+    "id": "wp-pre-14",
+    "deck": "word_parts",
+    "front": "Prefix: inter-",
+    "back": "Between"
+  },
+  {
+    "id": "wp-pre-15",
+    "deck": "word_parts",
+    "front": "Prefix: intra-",
+    "back": "Within"
+  },
+  {
+    "id": "wp-pre-16",
+    "deck": "word_parts",
+    "front": "Prefix: mal-",
+    "back": "Bad"
+  },
+  {
+    "id": "wp-pre-17",
+    "deck": "word_parts",
+    "front": "Prefix: micro-",
+    "back": "Small"
+  },
+  {
+    "id": "wp-pre-18",
+    "deck": "word_parts",
+    "front": "Prefix: mis-",
+    "back": "Wrong"
+  },
+  {
+    "id": "wp-pre-19",
+    "deck": "word_parts",
+    "front": "Prefix: mono-",
+    "back": "One"
+  },
+  {
+    "id": "wp-pre-20",
+    "deck": "word_parts",
+    "front": "Prefix: multi-",
+    "back": "Many"
+  },
+  {
+    "id": "wp-pre-21",
+    "deck": "word_parts",
+    "front": "Prefix: neo-",
+    "back": "New"
+  },
+  {
+    "id": "wp-pre-22",
+    "deck": "word_parts",
+    "front": "Prefix: omni-",
+    "back": "All"
+  },
+  {
+    "id": "wp-pre-23",
+    "deck": "word_parts",
+    "front": "Prefix: peri-",
+    "back": "Around"
+  },
+  {
+    "id": "wp-pre-24",
+    "deck": "word_parts",
+    "front": "Prefix: poly-",
+    "back": "Many"
+  },
+  {
+    "id": "wp-pre-25",
+    "deck": "word_parts",
+    "front": "Prefix: post-",
+    "back": "After"
+  },
+  {
+    "id": "wp-pre-26",
+    "deck": "word_parts",
+    "front": "Prefix: pre-",
+    "back": "Before"
+  },
+  {
+    "id": "wp-pre-27",
+    "deck": "word_parts",
+    "front": "Prefix: pro-",
+    "back": "Forward/for"
+  },
+  {
+    "id": "wp-pre-28",
+    "deck": "word_parts",
+    "front": "Prefix: re-",
+    "back": "Again/back"
+  },
+  {
+    "id": "wp-pre-29",
+    "deck": "word_parts",
+    "front": "Prefix: retro-",
+    "back": "Backward"
+  },
+  {
+    "id": "wp-pre-30",
+    "deck": "word_parts",
+    "front": "Prefix: sub-",
+    "back": "Under"
+  },
+  {
+    "id": "wp-pre-31",
+    "deck": "word_parts",
+    "front": "Prefix: super-",
+    "back": "Above"
+  },
+  {
+    "id": "wp-pre-32",
+    "deck": "word_parts",
+    "front": "Prefix: trans-",
+    "back": "Across"
+  },
+  {
+    "id": "wp-pre-33",
+    "deck": "word_parts",
+    "front": "Prefix: un-",
+    "back": "Not"
+  },
+  {
+    "id": "wp-pre-34",
+    "deck": "word_parts",
+    "front": "Prefix: uni-",
+    "back": "One"
+  },
+  {
+    "id": "wp-root-01",
+    "deck": "word_parts",
+    "front": "Root: anthrop",
+    "back": "Human"
+  },
+  {
+    "id": "wp-root-02",
+    "deck": "word_parts",
+    "front": "Root: aud",
+    "back": "Hear"
+  },
+  {
+    "id": "wp-root-03",
+    "deck": "word_parts",
+    "front": "Root: bene",
+    "back": "Good"
+  },
+  {
+    "id": "wp-root-04",
+    "deck": "word_parts",
+    "front": "Root: chron",
+    "back": "Time"
+  },
+  {
+    "id": "wp-root-05",
+    "deck": "word_parts",
+    "front": "Root: cogn/gnos",
+    "back": "Know"
+  },
+  {
+    "id": "wp-root-06",
+    "deck": "word_parts",
+    "front": "Root: dict",
+    "back": "Say"
+  },
+  {
+    "id": "wp-root-07",
+    "deck": "word_parts",
+    "front": "Root: duc/duct",
+    "back": "Lead"
+  },
+  {
+    "id": "wp-root-08",
+    "deck": "word_parts",
+    "front": "Root: fid",
+    "back": "Faith"
+  },
+  {
+    "id": "wp-root-09",
+    "deck": "word_parts",
+    "front": "Root: graph",
+    "back": "Write"
+  },
+  {
+    "id": "wp-root-10",
+    "deck": "word_parts",
+    "front": "Root: greg",
+    "back": "Group"
+  },
+  {
+    "id": "wp-root-11",
+    "deck": "word_parts",
+    "front": "Root: jur/jus",
+    "back": "Law"
+  },
+  {
+    "id": "wp-root-12",
+    "deck": "word_parts",
+    "front": "Root: log/logy",
+    "back": "Word/study"
+  },
+  {
+    "id": "wp-root-13",
+    "deck": "word_parts",
+    "front": "Root: loqu/locut",
+    "back": "Speak"
+  },
+  {
+    "id": "wp-root-14",
+    "deck": "word_parts",
+    "front": "Root: luc/lum",
+    "back": "Light"
+  },
+  {
+    "id": "wp-root-15",
+    "deck": "word_parts",
+    "front": "Root: mal",
+    "back": "Bad"
+  },
+  {
+    "id": "wp-root-16",
+    "deck": "word_parts",
+    "front": "Root: man",
+    "back": "Hand"
+  },
+  {
+    "id": "wp-root-17",
+    "deck": "word_parts",
+    "front": "Root: mit/miss",
+    "back": "Send"
+  },
+  {
+    "id": "wp-root-18",
+    "deck": "word_parts",
+    "front": "Root: morph",
+    "back": "Form"
+  },
+  {
+    "id": "wp-root-19",
+    "deck": "word_parts",
+    "front": "Root: mort",
+    "back": "Death"
+  },
+  {
+    "id": "wp-root-20",
+    "deck": "word_parts",
+    "front": "Root: path",
+    "back": "Feeling/disease"
+  },
+  {
+    "id": "wp-root-21",
+    "deck": "word_parts",
+    "front": "Root: ped/pod",
+    "back": "Foot"
+  },
+  {
+    "id": "wp-root-22",
+    "deck": "word_parts",
+    "front": "Root: phil",
+    "back": "Love"
+  },
+  {
+    "id": "wp-root-23",
+    "deck": "word_parts",
+    "front": "Root: phon",
+    "back": "Sound"
+  },
+  {
+    "id": "wp-root-24",
+    "deck": "word_parts",
+    "front": "Root: port",
+    "back": "Carry"
+  },
+  {
+    "id": "wp-root-25",
+    "deck": "word_parts",
+    "front": "Root: rupt",
+    "back": "Break"
+  },
+  {
+    "id": "wp-root-26",
+    "deck": "word_parts",
+    "front": "Root: scrib/script",
+    "back": "Write"
+  },
+  {
+    "id": "wp-root-27",
+    "deck": "word_parts",
+    "front": "Root: sens/sent",
+    "back": "Feel"
+  },
+  {
+    "id": "wp-root-28",
+    "deck": "word_parts",
+    "front": "Root: spec/spic",
+    "back": "Look"
+  },
+  {
+    "id": "wp-root-29",
+    "deck": "word_parts",
+    "front": "Root: spir",
+    "back": "Breathe"
+  },
+  {
+    "id": "wp-root-30",
+    "deck": "word_parts",
+    "front": "Root: terr",
+    "back": "Earth"
+  },
+  {
+    "id": "wp-root-31",
+    "deck": "word_parts",
+    "front": "Root: therm",
+    "back": "Heat"
+  },
+  {
+    "id": "wp-root-32",
+    "deck": "word_parts",
+    "front": "Root: vac",
+    "back": "Empty"
+  },
+  {
+    "id": "wp-root-33",
+    "deck": "word_parts",
+    "front": "Root: ven/vent",
+    "back": "Come"
+  },
+  {
+    "id": "wp-root-34",
+    "deck": "word_parts",
+    "front": "Root: ver",
+    "back": "True"
+  },
+  {
+    "id": "wp-root-35",
+    "deck": "word_parts",
+    "front": "Root: vid/vis",
+    "back": "See"
+  },
+  {
+    "id": "wp-root-36",
+    "deck": "word_parts",
+    "front": "Root: voc/vok",
+    "back": "Voice/call"
+  },
+  {
+    "id": "wp-root-37",
+    "deck": "word_parts",
+    "front": "Root: vol",
+    "back": "Wish"
+  },
+  {
+    "id": "wp-suf-01",
+    "deck": "word_parts",
+    "front": "Suffix: -able/-ible",
+    "back": "Capable of"
+  },
+  {
+    "id": "wp-suf-02",
+    "deck": "word_parts",
+    "front": "Suffix: -ate",
+    "back": "Make/become"
+  },
+  {
+    "id": "wp-suf-03",
+    "deck": "word_parts",
+    "front": "Suffix: -cide",
+    "back": "Kill"
+  },
+  {
+    "id": "wp-suf-04",
+    "deck": "word_parts",
+    "front": "Suffix: -fy",
+    "back": "Make"
+  },
+  {
+    "id": "wp-suf-05",
+    "deck": "word_parts",
+    "front": "Suffix: -ism",
+    "back": "Belief"
+  },
+  {
+    "id": "wp-suf-06",
+    "deck": "word_parts",
+    "front": "Suffix: -ist",
+    "back": "Person"
+  },
+  {
+    "id": "wp-suf-07",
+    "deck": "word_parts",
+    "front": "Suffix: -ity",
+    "back": "State"
+  },
+  {
+    "id": "wp-suf-08",
+    "deck": "word_parts",
+    "front": "Suffix: -ize",
+    "back": "Make"
+  },
+  {
+    "id": "wp-suf-09",
+    "deck": "word_parts",
+    "front": "Suffix: -less",
+    "back": "Without"
+  },
+  {
+    "id": "wp-suf-10",
+    "deck": "word_parts",
+    "front": "Suffix: -ment",
+    "back": "Result/state"
+  },
+  {
+    "id": "wp-suf-11",
+    "deck": "word_parts",
+    "front": "Suffix: -ology",
+    "back": "Study"
+  },
+  {
+    "id": "wp-suf-12",
+    "deck": "word_parts",
+    "front": "Suffix: -ous/-ful",
+    "back": "Full of"
+  },
+  {
+    "id": "wp-suf-13",
+    "deck": "word_parts",
+    "front": "Suffix: -tion/-sion",
+    "back": "Act/state"
+  },
+  {
+    "id": "wp-suf-14",
+    "deck": "word_parts",
+    "front": "Suffix: -tude",
+    "back": "State"
+  },
+  {
+    "id": "an-01",
+    "deck": "analogies",
+    "front": "Synonym",
+    "back": "Example: big : large"
+  },
+  {
+    "id": "an-02",
+    "deck": "analogies",
+    "front": "Antonym",
+    "back": "Example: barren : fertile"
+  },
+  {
+    "id": "an-03",
+    "deck": "analogies",
+    "front": "Degree / intensity",
+    "back": "Example: warm : hot :: cool : freezing"
+  },
+  {
+    "id": "an-04",
+    "deck": "analogies",
+    "front": "Part to whole",
+    "back": "Example: petal : flower"
+  },
+  {
+    "id": "an-05",
+    "deck": "analogies",
+    "front": "Whole to part",
+    "back": "Example: forest : tree"
+  },
+  {
+    "id": "an-06",
+    "deck": "analogies",
+    "front": "Member to category",
+    "back": "Example: ant : insect"
+  },
+  {
+    "id": "an-07",
+    "deck": "analogies",
+    "front": "Tool to user",
+    "back": "Example: scalpel : surgeon"
+  },
+  {
+    "id": "an-08",
+    "deck": "analogies",
+    "front": "Tool to object",
+    "back": "Example: hammer : nail"
+  },
+  {
+    "id": "an-09",
+    "deck": "analogies",
+    "front": "Tool to action",
+    "back": "Example: scissors : cut"
+  },
+  {
+    "id": "an-10",
+    "deck": "analogies",
+    "front": "Worker to workplace",
+    "back": "Example: judge : courtroom"
+  },
+  {
+    "id": "an-11",
+    "deck": "analogies",
+    "front": "Cause to effect",
+    "back": "Example: germ : infection"
+  },
+  {
+    "id": "an-12",
+    "deck": "analogies",
+    "front": "Effect to cause",
+    "back": "Example: famine : drought"
+  },
+  {
+    "id": "an-13",
+    "deck": "analogies",
+    "front": "Sequence / time",
+    "back": "Example: tadpole : frog"
+  },
+  {
+    "id": "an-14",
+    "deck": "analogies",
+    "front": "Product to source",
+    "back": "Example: honey : bee"
+  },
+  {
+    "id": "an-15",
+    "deck": "analogies",
+    "front": "Material to product",
+    "back": "Example: clay : pottery"
+  },
+  {
+    "id": "an-16",
+    "deck": "analogies",
+    "front": "Symbol to concept",
+    "back": "Example: dove : peace"
+  },
+  {
+    "id": "an-17",
+    "deck": "analogies",
+    "front": "Function",
+    "back": "Example: dam : flood (prevents)"
+  },
+  {
+    "id": "an-18",
+    "deck": "analogies",
+    "front": "Lack of",
+    "back": "Example: coward : courage"
+  },
+  {
+    "id": "an-19",
+    "deck": "analogies",
+    "front": "Gender / adult-young",
+    "back": "Example: mare : foal (use carefully; many modern tests avoid this type)"
+  },
+  {
+    "id": "an-20",
+    "deck": "analogies",
+    "front": "Grammatical form",
+    "back": "Example: sing : sang (tense)"
+  },
+  {
+    "id": "math-01",
+    "deck": "math",
+    "front": "Distance, rate, time",
+    "back": "d = r × t"
+  },
+  {
+    "id": "math-02",
+    "deck": "math",
+    "front": "Average speed (different times per leg)",
+    "back": "total distance ÷ total time — NOT the average of the two speeds"
+  },
+  {
+    "id": "math-03",
+    "deck": "math",
+    "front": "Work rate (two people/pipes together)",
+    "back": "1/a + 1/b = 1/t"
+  },
+  {
+    "id": "math-04",
+    "deck": "math",
+    "front": "Percent of a number",
+    "back": "part = (pct/100) × whole"
+  },
+  {
+    "id": "math-05",
+    "deck": "math",
+    "front": "Percent change",
+    "back": "(new − old) / old × 100"
+  },
+  {
+    "id": "math-06",
+    "deck": "math",
+    "front": "Successive discounts (e.g. 20% off, then 10% off)",
+    "back": "Multiply the remaining factors: 0.8 × 0.9 = 0.72 of the original — don't just add the percents"
+  },
+  {
+    "id": "math-07",
+    "deck": "math",
+    "front": "Ratio / proportion",
+    "back": "a/b = c/d → cross-multiply: ad = bc"
+  },
+  {
+    "id": "math-08",
+    "deck": "math",
+    "front": "Mixture problems",
+    "back": "value = amount × concentration; combining: c1v1 + c2v2 = cf(v1+v2)"
+  },
+  {
+    "id": "math-09",
+    "deck": "math",
+    "front": "Simple interest",
+    "back": "I = P r t (r as a decimal, t in years)"
+  },
+  {
+    "id": "math-10",
+    "deck": "math",
+    "front": "Compound interest",
+    "back": "A = P(1+r)^t"
+  },
+  {
+    "id": "math-11",
+    "deck": "math",
+    "front": "Exponent rules: multiplying/dividing",
+    "back": "a^m·a^n = a^(m+n); a^m/a^n = a^(m−n)"
+  },
+  {
+    "id": "math-12",
+    "deck": "math",
+    "front": "Exponent rules: power of a power, zero, negative",
+    "back": "(a^m)^n = a^(mn); a^0 = 1 (a≠0); a^(−n) = 1/a^n"
+  },
+  {
+    "id": "math-13",
+    "deck": "math",
+    "front": "Radical rules",
+    "back": "√(ab) = √a·√b; √(a/b) = √a/√b; √a·√a = a"
+  },
+  {
+    "id": "math-14",
+    "deck": "math",
+    "front": "Quadratic formula",
+    "back": "x = [−b ± √(b²−4ac)] / (2a)"
+  },
+  {
+    "id": "math-15",
+    "deck": "math",
+    "front": "Discriminant (b²−4ac)",
+    "back": "Positive → two real roots. Zero → one root. Negative → no real roots."
+  },
+  {
+    "id": "math-16",
+    "deck": "math",
+    "front": "FOIL",
+    "back": "(x+a)(x+b) = x² + (a+b)x + ab"
+  },
+  {
+    "id": "math-17",
+    "deck": "math",
+    "front": "Inequalities — the one everyone forgets",
+    "back": "Multiplying or dividing by a negative flips the inequality sign"
+  },
+  {
+    "id": "math-18",
+    "deck": "math",
+    "front": "Absolute value equation |x| = a",
+    "back": "x = a OR x = −a (when a ≥ 0)"
+  },
+  {
+    "id": "math-19",
+    "deck": "math",
+    "front": "Slope formula",
+    "back": "m = (y2−y1)/(x2−x1)"
+  },
+  {
+    "id": "math-20",
+    "deck": "math",
+    "front": "Slope-intercept form",
+    "back": "y = mx + b"
+  },
+  {
+    "id": "math-21",
+    "deck": "math",
+    "front": "Distance between two points",
+    "back": "√[(x2−x1)² + (y2−y1)²]"
+  },
+  {
+    "id": "math-22",
+    "deck": "math",
+    "front": "Parallel vs. perpendicular slopes",
+    "back": "Parallel: equal slopes. Perpendicular: negative reciprocal slopes."
+  },
+  {
+    "id": "math-23",
+    "deck": "math",
+    "front": "Pythagorean theorem",
+    "back": "a² + b² = c² (right triangles only)"
+  },
+  {
+    "id": "math-24",
+    "deck": "math",
+    "front": "45-45-90 triangle sides",
+    "back": "legs = x, hypotenuse = x√2"
+  },
+  {
+    "id": "math-25",
+    "deck": "math",
+    "front": "30-60-90 triangle sides",
+    "back": "short leg = x, long leg = x√3, hypotenuse = 2x — the long leg is x√3, NOT 2x"
+  },
+  {
+    "id": "math-26",
+    "deck": "math",
+    "front": "Area of a triangle",
+    "back": "A = (1/2) b h"
+  },
+  {
+    "id": "math-27",
+    "deck": "math",
+    "front": "Circle formulas",
+    "back": "Circumference C = 2πr = πd; Area A = πr²"
+  },
+  {
+    "id": "math-28",
+    "deck": "math",
+    "front": "Sphere volume & surface area",
+    "back": "V = (4/3)πr³; SA = 4πr²"
+  },
+  {
+    "id": "math-29",
+    "deck": "math",
+    "front": "Mental math: 15% of a number",
+    "back": "Find 10%, then add half of that (which is 5%)"
+  },
+  {
+    "id": "math-30",
+    "deck": "math",
+    "front": "Mental math: multiplying by 25",
+    "back": "n × 25 = n × 100 ÷ 4"
+  },
+  {
+    "id": "sci-01",
+    "deck": "science",
+    "front": "Newton's 1st law",
+    "back": "An object at rest or moving at constant velocity stays that way unless a net force acts on it"
+  },
+  {
+    "id": "sci-02",
+    "deck": "science",
+    "front": "Newton's 2nd law",
+    "back": "F = ma (force = mass × acceleration)"
+  },
+  {
+    "id": "sci-03",
+    "deck": "science",
+    "front": "Newton's 3rd law",
+    "back": "Every force has an equal and opposite reaction force"
+  },
+  {
+    "id": "sci-04",
+    "deck": "science",
+    "front": "Weight formula",
+    "back": "W = mg (g ≈ 9.8 m/s² ≈ 32 ft/s²)"
+  },
+  {
+    "id": "sci-05",
+    "deck": "science",
+    "front": "Kinetic energy",
+    "back": "KE = (1/2)mv²"
+  },
+  {
+    "id": "sci-06",
+    "deck": "science",
+    "front": "Gravitational potential energy",
+    "back": "PE = mgh"
+  },
+  {
+    "id": "sci-07",
+    "deck": "science",
+    "front": "Power (physics)",
+    "back": "P = W/t = Fv"
+  },
+  {
+    "id": "sci-08",
+    "deck": "science",
+    "front": "Momentum",
+    "back": "p = mv — conserved in an isolated collision"
+  },
+  {
+    "id": "sci-09",
+    "deck": "science",
+    "front": "Kinetic vs. static friction",
+    "back": "Kinetic: f = μk·N. Static friction can be as high as μs·N"
+  },
+  {
+    "id": "sci-10",
+    "deck": "science",
+    "front": "Centripetal acceleration & force",
+    "back": "a = v²/r; F = mv²/r — always points toward the center"
+  },
+  {
+    "id": "sci-11",
+    "deck": "science",
+    "front": "Wave speed formula",
+    "back": "v = fλ (speed = frequency × wavelength)"
+  },
+  {
+    "id": "sci-12",
+    "deck": "science",
+    "front": "Sound travels fastest through…",
+    "back": "solids, then liquids, then gases — not at all through a vacuum"
+  },
+  {
+    "id": "sci-13",
+    "deck": "science",
+    "front": "Doppler effect",
+    "back": "Source moving toward you → you hear a higher frequency"
+  },
+  {
+    "id": "sci-14",
+    "deck": "science",
+    "front": "Speed of light in a vacuum",
+    "back": "c = 3 × 10^8 m/s"
+  },
+  {
+    "id": "sci-15",
+    "deck": "science",
+    "front": "Refraction",
+    "back": "Light bends toward the 'normal' when entering a denser (higher n) medium; n = c/v"
+  },
+  {
+    "id": "sci-16",
+    "deck": "science",
+    "front": "ROYGBIV wavelength order",
+    "back": "Red = longest visible wavelength, violet = shortest. UV has more energy than violet; infrared has less than red."
+  },
+  {
+    "id": "sci-17",
+    "deck": "science",
+    "front": "Ohm's law",
+    "back": "V = IR"
+  },
+  {
+    "id": "sci-18",
+    "deck": "science",
+    "front": "Electrical power",
+    "back": "P = IV = I²R = V²/R"
+  },
+  {
+    "id": "sci-19",
+    "deck": "science",
+    "front": "Series vs. parallel circuits",
+    "back": "Series: same current everywhere, resistances add. Parallel: same voltage per branch, 1/Req = 1/R1 + 1/R2"
+  },
+  {
+    "id": "sci-20",
+    "deck": "science",
+    "front": "Heat transfer methods",
+    "back": "Conduction (contact), convection (moving fluid), radiation (EM waves, no contact needed)"
+  },
+  {
+    "id": "sci-21",
+    "deck": "science",
+    "front": "Heat equation (no phase change)",
+    "back": "Q = mcΔT"
+  },
+  {
+    "id": "sci-22",
+    "deck": "science",
+    "front": "Absolute zero",
+    "back": "0 K = −273°C; K = °C + 273"
+  },
+  {
+    "id": "sci-23",
+    "deck": "science",
+    "front": "pH scale",
+    "back": "7 is neutral, below 7 is acidic, above 7 is basic — each whole step is a 10× change in H+ concentration"
+  },
+  {
+    "id": "sci-24",
+    "deck": "science",
+    "front": "Oxidation vs. reduction",
+    "back": "OIL RIG: Oxidation Is Loss (of electrons), Reduction Is Gain"
+  },
+  {
+    "id": "sci-25",
+    "deck": "science",
+    "front": "Avogadro's number",
+    "back": "6.02 × 10^23 particles per mole"
+  },
+  {
+    "id": "sci-26",
+    "deck": "science",
+    "front": "Standard atmosphere",
+    "back": "≈ 101.3 kPa ≈ 14.7 psi ≈ 29.92 inHg"
+  },
+  {
+    "id": "avi-01",
+    "deck": "aviation",
+    "front": "The four forces on an airplane",
+    "back": "Lift = Weight, Thrust = Drag (in steady, level, unaccelerated flight)"
+  },
+  {
+    "id": "avi-02",
+    "deck": "aviation",
+    "front": "Angle of attack (AoA)",
+    "back": "The angle between the wing's chord line and the relative wind — too high an AoA causes a stall"
+  },
+  {
+    "id": "avi-03",
+    "deck": "aviation",
+    "front": "What causes a stall",
+    "back": "The wing exceeds its critical angle of attack — can happen at any airspeed or attitude"
+  },
+  {
+    "id": "avi-04",
+    "deck": "aviation",
+    "front": "Ailerons",
+    "back": "Trailing edge of the wings, control roll/bank around the longitudinal axis"
+  },
+  {
+    "id": "avi-05",
+    "deck": "aviation",
+    "front": "Elevator",
+    "back": "Horizontal tail surface, controls pitch (nose up/down) around the lateral axis"
+  },
+  {
+    "id": "avi-06",
+    "deck": "aviation",
+    "front": "Rudder",
+    "back": "Vertical tail surface, controls yaw (nose left/right) around the vertical axis"
+  },
+  {
+    "id": "avi-07",
+    "deck": "aviation",
+    "front": "Flaps",
+    "back": "Increase wing camber/area — add lift and drag for slower takeoff and landing speeds"
+  },
+  {
+    "id": "avi-08",
+    "deck": "aviation",
+    "front": "Adverse yaw",
+    "back": "Banking creates more lift and drag on the down-aileron wing, yawing the nose the opposite way — the rudder corrects it"
+  },
+  {
+    "id": "avi-09",
+    "deck": "aviation",
+    "front": "Fuselage vs. empennage",
+    "back": "Fuselage = the body of the plane. Empennage = the whole tail assembly"
+  },
+  {
+    "id": "avi-10",
+    "deck": "aviation",
+    "front": "Pitot tube vs. static port",
+    "back": "Pitot tube measures ram (dynamic) pressure for airspeed. Static port measures ambient pressure for altimeter/VSI/airspeed"
+  },
+  {
+    "id": "avi-11",
+    "deck": "aviation",
+    "front": "IAS / CAS / TAS / GS",
+    "back": "Indicated → Calibrated (corrected for instrument error) → True (corrected for altitude/temp) → Groundspeed (adjusted for wind)"
+  },
+  {
+    "id": "avi-12",
+    "deck": "aviation",
+    "front": "Airspeed indicator color arcs",
+    "back": "White = flap range, Green = normal range, Yellow = caution, Red line = Vne (never-exceed speed)"
+  },
+  {
+    "id": "avi-13",
+    "deck": "aviation",
+    "front": "Blocked pitot tube, open static port",
+    "back": "Airspeed indicator drifts toward zero in level flight"
+  },
+  {
+    "id": "avi-14",
+    "deck": "aviation",
+    "front": "Standard altimeter setting",
+    "back": "29.92 inHg"
+  },
+  {
+    "id": "avi-15",
+    "deck": "aviation",
+    "front": "Attitude indicator",
+    "back": "Shows bank and pitch; the horizon bar stays gyro-stable"
+  },
+  {
+    "id": "avi-16",
+    "deck": "aviation",
+    "front": "Heading indicator",
+    "back": "A gyro-stabilized compass card — needs periodic realignment due to precession drift"
+  },
+  {
+    "id": "avi-17",
+    "deck": "aviation",
+    "front": "Turn coordinator ball",
+    "back": "Ball toward the inside of the turn = slip; toward the outside = skid. 'Step on the ball' to fix it."
+  },
+  {
+    "id": "avi-18",
+    "deck": "aviation",
+    "front": "Compass dip errors (Northern Hemisphere)",
+    "back": "ANDS: Accelerate North, Decelerate South"
+  },
+  {
+    "id": "avi-19",
+    "deck": "aviation",
+    "front": "Compass turning errors (Northern Hemisphere)",
+    "back": "UNOS: Undershoot North, Overshoot South"
+  },
+  {
+    "id": "avi-20",
+    "deck": "aviation",
+    "front": "Runway numbering",
+    "back": "The magnetic heading rounded to the nearest 10°, last zero dropped (e.g. heading 268° → Runway 27)"
+  },
+  {
+    "id": "avi-21",
+    "deck": "aviation",
+    "front": "Standard traffic pattern legs",
+    "back": "Upwind, crosswind, downwind, base, final"
+  },
+  {
+    "id": "avi-22",
+    "deck": "aviation",
+    "front": "Which way does a wind sock point?",
+    "back": "Downwind — the direction the wind is blowing toward"
+  },
+  {
+    "id": "avi-23",
+    "deck": "aviation",
+    "front": "VFR ceiling/visibility minimum",
+    "back": "Ceiling above 3,000 ft AGL and visibility above 5 statute miles"
+  },
+  {
+    "id": "avi-24",
+    "deck": "aviation",
+    "front": "Cold front vs. warm front",
+    "back": "Cold front: steep, fast, can bring thunderstorms, then cooler/drier air. Warm front: shallow, slow, widespread rain, then warmer/humid air."
+  },
+  {
+    "id": "avi-25",
+    "deck": "aviation",
+    "front": "1 nautical mile is about",
+    "back": "6,076 feet (about 1 minute of latitude); 1 knot = 1 nautical mile per hour"
+  }
+]

@@ -1,21 +1,26 @@
 # AFOQT Overview (Form T family)
 
-Default user of this pack: **cyber / software officer**, not rated aircrew. See CYBER_TRACK.md.
+Quick heads up: this app is set up by default for the **cyber / software officer** path, not for rated aircrew (pilots, etc.). If that's you, jump to `CYBER_TRACK.md` for the specifics — this page is the big picture.
 
-## What it is
-The Air Force Officer Qualifying Test is a timed multiple-aptitude battery used for officer commissioning programs (OTS, AFROTC, some ANG/AFR paths) and for classification into rated training (Pilot including RPA, Combat Systems Officer, Air Battle Manager).
+## What this test actually is
 
-- About 516 multiple-choice items across 12 subtests.
-- About five hours including admin and breaks; timed content is roughly 3.5 hours.
-- Computer-based in many locations (eAFOQT); still strictly timed by section.
-- No calculator. No penalty for wrong answers. Answer every question.
-- Official scores are composite PERCENTILES 1–99, not raw percent correct.
+The AFOQT is a long, timed test with a bunch of different sections (the Air Force calls them "subtests"). It does two jobs at once: it helps decide whether you can commission as an officer at all (through OTS, AFROTC, or some Guard/Reserve paths), and it helps sort people into flying-related jobs — Pilot (including RPA), Combat Systems Officer, and Air Battle Manager.
 
-## Official familiarization
-The only Air Force-endorsed familiarization software is OATTS (Official AFOQT & TBAS Test-familiarization Software): https://af-oatts.github.io/
-Use this app for knowledge, generated drills, and tracking. Use OATTS for official look-and-feel and TBAS familiarization.
+Here's what to expect, plain and simple:
 
-## Subtests in administration order
+- About 516 multiple-choice questions, spread across 12 sections.
+- The whole appointment takes about five hours once you count paperwork and breaks. The actual timed testing is roughly 3.5 hours of that.
+- A lot of test sites now use the computer version (eAFOQT). Same strict timing, just on a screen.
+- No calculator. Ever. And no penalty for a wrong answer — so always answer every question, even a guess.
+- Your official score is a **percentile**, from 1 to 99 — not a percent-correct grade. A score of 60 means you did better than 60% of the people who've taken it, not that you got 60% of questions right.
+
+## The one officially blessed practice tool
+
+If you want to see what the real test screens look like, there's exactly one Air Force-endorsed practice tool: OATTS (Official AFOQT & TBAS Test-familiarization Software), at https://af-oatts.github.io/. Think of it this way: use this app to actually learn the material, build drills, and track your progress — and use OATTS to get comfortable with the real screens and timing, plus TBAS familiarization.
+
+## The sections, in the order you'll take them
+
+Here's the full lineup — what each section is called, its short code, how many questions, how many minutes you get, and roughly how many seconds that gives you per question:
 
 | # | Subtest | Code | Items | Minutes | Sec/item | Scored composites |
 |---|---------|------|------:|--------:|---------:|-------------------|
@@ -32,11 +37,11 @@ Use this app for knowledge, generated drills, and tracking. Use OATTS for offici
 | 11 | Block Counting | BC | 30 | 5 | ~10 | CSO, ABM |
 | 12 | Aviation Information | AI | 20 | 8 | ~24 | Pilot, ABM |
 
-\*Composite recipes published in open sources disagree slightly on CSO and ABM ingredients. This pack uses the Wikipedia/Form T research mapping below and flags disagreements. Confirm nothing against a live official score report interpretation guide from your testing office.
+A quick honesty note: \*different public sources don't fully agree on exactly which subtests feed CSO and ABM. This app uses the Wikipedia / Form T research mapping below and flags where sources disagree. Don't take any of this as gospel over your official score report — confirm with your testing office.
 
-Time sources also disagree on RC (24 vs 38 min) and SJ item count (16 vs 50). Train to the FASTER published times so you are not surprised. If the official pamphlet at your test site lists different limits, obey the pamphlet.
+Sources also disagree on the Reading Comprehension time (24 vs 38 minutes) and the SJ item count (16 vs 50). This app trains you to the **faster** published times, so if the real thing turns out slower, that's a nice surprise instead of a nasty one. And if the pamphlet at your actual test site says something different, always go with the pamphlet.
 
-## Composite recipes used in this pack
+## How the composite scores are built
 
 | Composite | Subtests summed (Form T research / Wikipedia) |
 |-----------|-----------------------------------------------|
@@ -47,42 +52,46 @@ Time sources also disagree on RC (24 vs 38 min) and SJ item count (16 vs 50). Tr
 | Verbal | VA + WK + RC |
 | Quantitative | AR + MK |
 
-Commercial prep sites sometimes list CSO as WK + MK + TR + BC only. Treat MK, TR, and the verbal trio as safe high-value work regardless.
+Heads up: some commercial prep sites list CSO as just WK + MK + TR + BC. Either way, MK, TR, and the verbal trio (VA/WK/RC) are safe bets to study — they show up no matter which recipe is right.
 
-## Minimums vs reality (policy as commonly published 2025–2026)
+## What actually counts as "good enough" (policy as commonly published 2025–2026)
 
-Line-officer commissioning floor (typical):
-- Verbal 15
-- Quantitative 10
+For a regular line-officer commission, the typical floor is:
+- Verbal: **15**
+- Quantitative: **10**
 
-Rated floors (typical, confirm for your accession source):
-- Pilot / RPA: Pilot composite 25
-- CSO: CSO composite 25
-- ABM: ABM composite 25
+For rated jobs, the typical floors are (confirm these for your specific accession source):
+- Pilot / RPA: Pilot composite **25**
+- CSO: CSO composite **25**
+- ABM: ABM composite **25**
 
-These are eligibility floors, not selection scores. Competitive pilot packages in public community reporting often cluster Pilot 70–90+. Non-rated packages care more about Verbal, Quant, Academic Aptitude, GPA, PFA, commander ranking, and the board.
+Important distinction: those are just the minimums to be *eligible* — not what actually gets you picked. In public reporting, people who are actually competitive for pilot slots often cluster in the Pilot 70–90+ range. If you're not going rated, boards care more about your Verbal, Quant, and Academic Aptitude scores, plus GPA, your fitness test, your commander's ranking, and how the board sees your whole package.
 
-Some Guard/Reserve units still talk about legacy combined Pilot+CSO rules. Confirm locally.
+One more wrinkle: some Guard/Reserve units still reference older combined Pilot+CSO rules. If that might apply to you, confirm locally.
 
-## Attempts and superscore
-Common published rules:
-- Limited lifetime attempts (often 2, third by waiver).
-- Waiting period often 90 days (some sources still cite 150). AFROTC guidance has used 90.
-- Third attempt may require proof of additional relevant coursework or skill work.
-- Super-scoring: best composite across attempts can become the score of record under current DAFMAN language.
-Always verify with the office that owns your package. Policy moves.
+## How many times you can take it
 
-## PCSM (pilots / RPA)
-Pilot Candidate Selection Method combines:
-1. AFOQT Pilot composite
-2. TBAS (Test of Basic Aviation Skills)
-3. Logged flying hours (civilian hours are capped in the official algorithm)
+The commonly published rules:
+- You get a limited number of lifetime attempts — often 2, with a third possible by waiver.
+- There's usually a waiting period between attempts, often 90 days (though some sources still say 150). AFROTC guidance has used 90.
+- A third attempt may require you to show proof of extra coursework or skill-building since your last try.
+- Under current DAFMAN language, your best composite across attempts can become your score of record — this is called super-scoring.
 
-PCSM is its own percentile. This app does not compute PCSM.
+Always double-check these with whichever office owns your package. Policy on this stuff changes.
 
-## How to use this app
-1. Set a target track on the dashboard.
-2. Take a baseline mixed quiz.
-3. Study weak topics in Coach mode (local LLM grounded in these files).
-4. Run timed section drills at official pace.
-5. Watch readiness by subtest, not vibes.
+## PCSM — this only matters if you're going rated
+
+If you're chasing a pilot or RPA slot, you'll also run into PCSM (Pilot Candidate Selection Method), which combines:
+1. Your AFOQT Pilot composite
+2. TBAS (Test of Basic Aviation Skills) results
+3. Your logged flying hours (civilian hours are capped in the official formula)
+
+PCSM gets its own separate percentile. This app doesn't calculate it for you.
+
+## How to actually use this app
+
+1. Pick a target track on the dashboard.
+2. Take a baseline mixed quiz so you know where you stand.
+3. Study your weak spots in Coach mode (it's a local AI tutor grounded in these files).
+4. Run timed drills at the real test's pace.
+5. Track your readiness section by section — not just by how you *feel*.

@@ -1,3 +1,4 @@
+import os
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -8,7 +9,7 @@ WEB_DIR = ROOT / "web"
 DATA_DIR = ROOT / "data"
 PROGRESS_PATH = DATA_DIR / "progress.json"
 
-OLLAMA_URL = "http://127.0.0.1:11434"
+OLLAMA_URL = os.environ.get("OLLAMA_URL", "http://127.0.0.1:11434")
 DEFAULT_MODEL = "llama3.1"
 
 SUBTESTS = {

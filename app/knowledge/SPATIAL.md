@@ -1,59 +1,59 @@
 # Table Reading, Block Counting, Instrument Comprehension
 
-These are speed tests. Knowledge is small. Reps are everything. Official look-and-feel: OATTS.
+These three are speed tests, plain and simple. There isn't much to "know" — the real skill is reps until it's automatic. If you want the real look and feel of these, that's what OATTS is for.
 
-## Table Reading — 40 items, 7 minutes (~10.5 sec)
+## Table Reading — 40 items, 7 minutes (about 10.5 seconds each)
 
-A large grid. X along one axis, Y along the other. Each item gives a coordinate pair. You find the cell value.
+You'll see a large grid with an X-axis and a Y-axis. Each item gives you a coordinate pair, and you find the value in that cell.
 
-Method:
-1. Do not "search around." Pick the axis that is easier to lock (usually the top X scale).
-2. Drop a finger/pencil mentally down the column, then across the row — or the reverse, but always the same order.
-3. Read the value. Mark. Next.
-4. If you lose the row, restart from the axis. Guessing a neighbor is common; accuracy collapses when you rush the last 15.
+How to work it:
+1. Don't just "search around" the grid. Pick one axis to lock onto first — usually the top X scale is easiest.
+2. Trace down the column, then across the row (or the reverse) — whichever order you pick, always do it the same way every time.
+3. Read the value, mark your answer, move to the next one.
+4. If you lose your place in a row, go back and restart from the axis rather than guessing a neighboring cell. Accuracy tends to fall apart when you rush the last 15 items — watch for that.
 
-Practice: make a 20×20 spreadsheet of random two-digit numbers. Have the app (or a friend) fire coordinate pairs at you for 7 minutes.
+A way to practice: build a 20×20 spreadsheet of random two-digit numbers, and have a friend (or this app) fire coordinate pairs at you for 7 minutes straight.
 
-Common errors:
-- Sign errors if the table has negative axes
-- Off-by-one column
-- Reading the prompt as (Y,X) instead of (X,Y)
+Mistakes to watch for:
+- Sign errors, if the table has negative axes.
+- Being off by one column.
+- Reading a (X,Y) prompt backwards as (Y,X).
 
 ## Block Counting — 30 items, 5 minutes
 
-A pile of identical cubes is drawn in 3D. A target block is marked. Count how many blocks touch the target (shared face, not just an edge or corner) — OR count how many blocks are in the pile, depending on the item style. Form T items classically ask how many blocks touch a numbered block.
+You'll see a pile of identical cubes drawn in 3D, with one target block marked. Depending on the item style, you either count how many blocks touch the target (sharing a full face — not just an edge or corner), or count the total number of blocks in the whole pile. Classic Form T items usually ask how many blocks touch a numbered one.
 
-Rules:
-- Only FACE-adjacent counts for "touching" items.
-- Hidden blocks still exist if the stack geometry requires them. Assume no floating blocks and no unsupported cantilevers unless the drawing shows them.
-- Work by layers: how many in the target's layer sharing a side, plus one above if occupied, plus one below if occupied.
+Rules to hold onto:
+- Only **face-adjacent** blocks count as "touching."
+- Hidden blocks still exist if the geometry of the stack requires them to be there for support. Assume there are no floating blocks and no unsupported cantilevers, unless the drawing actually shows them.
+- Work it layer by layer: count blocks sharing a side in the target's own layer, then add one if there's a block directly above, and one more if there's a block directly below.
 
-Counting the whole pile:
-- Count layer by layer from the top.
-- Use the footprint. If a 3×3 base is fully populated and there is a 2×2 on top plus one cap, that is 9+4+1=14.
+For counting the whole pile:
+- Go layer by layer, starting from the top.
+- Use the footprint to help. For example: a fully-populated 3×3 base, with a 2×2 layer on top of that, plus one block capping it, comes out to 9 + 4 + 1 = 14.
 
-ASCII practice idea:
+A way to practice with ASCII sketches:
 ```
 Layer 3:     [A]
 Layer 2:  [B][C]
 Layer 1: [D][E][F]
 ```
-If C is the target: touches B (side), A (above), E (below). That is 3 unless D/F also share a face with C (they do not in this stack if C sits on E only).
+If C is the target block here: it touches B (to the side), A (above), and E (below) — that's 3, unless D or F also happen to share a face with C (in this particular stack, they don't, since C sits on E only).
 
-Draw slashes on scratch paper for each confirmed neighbor. Do not recount from scratch if you can avoid it.
+While you practice, mark a slash on scratch paper for each neighbor you've confirmed. It's faster than recounting from scratch every time.
 
 ## Instrument Comprehension — 25 items, 5 minutes
 
-See AVIATION.md for the AI + HI reading rules.
+The full rules for reading the attitude indicator and heading indicator live in `AVIATION.md` — this is just the drill sequence.
 
-Drill sequence until it is a reflex:
+Run this sequence until it's a reflex:
 1. Bank side
-2. Pitch up/down/level
-3. Heading quadrant (N/E/S/W then refine)
-4. Select silhouette
+2. Pitch: up, down, or level
+3. Heading quadrant (start with N/E/S/W, then narrow it down)
+4. Pick the silhouette
 
-If two silhouettes share bank and heading, pitch is the discriminator.
+If two silhouettes match on both bank and heading, pitch is what tells them apart.
 
-Heading indicator: the nose is at the lubber line. If the card shows 135 under the lubber, the airplane is pointing southeast.
+On the heading indicator, the nose points at the lubber line. If the card shows 135 lined up under the lubber, the airplane is pointed southeast.
 
-Do not confuse the test's miniature-airplane symbol with "which way the horizon tilts." Use the official convention: sky/ground on the attitude indicator, wings of the miniature airplane for bank.
+One thing to watch: don't confuse the miniature-airplane symbol with "whichever way the horizon looks tilted." Use the official convention — read the sky/ground background on the attitude indicator for pitch and bank, and read the miniature airplane's wings specifically for bank.

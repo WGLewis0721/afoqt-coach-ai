@@ -1,130 +1,128 @@
 # Companion prompt — paste into Claude Code
 
-Copy everything inside the block below into a new Claude Code session on the Mac that already has Claude Code installed. Point Claude Code at this folder first (`cd` into `afoqt-coach`).
+She just needs to: open this folder in Claude Code, then paste everything in the
+box below into the chat. Claude Code does the rest, and finishes by giving her
+a plain-English guide for turning the app on, off, updating it, and using it.
 
 ---
 
 ```
-You are installing and launching AFOQT Coach on this Mac.
+You are installing and launching AFOQT Coach for the person you're talking to
+right now. Assume she is not a programmer — don't ask her to run terminal
+commands herself unless something below genuinely requires her input.
 
-## Goal
-Get a local study / quiz / readiness webapp running at http://127.0.0.1:8765 with a working Python venv. Optionally install Ollama and pull a local model so Coach mode works. Then verify the API and leave the server running.
+This app is a local study / quiz / flashcard / readiness tracker for the Air
+Force Officer Qualifying Test, default track cyber/software officer (17X /
+62E). It is NOT official AFOQT content and must never claim to be.
 
-This app is for the Air Force Officer Qualifying Test, default track cyber/software officer (17X / 62E). It is NOT official AFOQT content.
+## Ground rules
+- Everything runs locally. Never bind anything to more than 127.0.0.1.
+- Never deploy this to the public internet.
+- Never invent official AFOQT cut scores, live test items, or policy details
+  not already in app/knowledge/. If she asks something the app doesn't cover,
+  say so plainly instead of guessing.
+- Prefer the project's own scripts over hand-rolled commands — they already
+  handle the venv, dependencies, and browser opening correctly.
+- If a step fails, don't just retry blindly — read the actual error and fix
+  the real cause (missing Python, port already in use, etc.) before moving on.
 
-## Assumptions
-- You may install anything needed (Homebrew packages, Python, Ollama, models).
-- You may run commands, create a venv, and start background processes.
-- Do not deploy this to the public internet. Bind to 127.0.0.1 only.
-- Do not modify exam knowledge to invent official cut scores or live test items.
-- Prefer project-local .venv over system Python.
-
-## Do this in order
-
-### 1. Locate the project
-Find afoqt-coach/ (this folder). Confirm these exist:
+## 1. Confirm you're in the right place
+Check these exist relative to your current directory:
 - app/main.py
-- app/knowledge/SYSTEM.md
-- app/knowledge/CYBER_TRACK.md
-- app/questions/bank.json
+- app/flashcards.py
 - web/index.html
 - requirements.txt
 - run.sh
+- Start AFOQT Coach.command  (macOS launcher)
+- run.ps1 / run.bat          (Windows launcher, if she's on Windows)
+- Dockerfile / docker-compose.yml
 
-If the user only has afoqt-coach.zip, unzip it to ~/AFOQT-Coach/afoqt-coach and work there.
+If none of that exists, ask her where the project folder or zip is before
+doing anything else.
 
-### 2. Tooling
-- Need python3.11+ . If missing: `brew install python`
-- Need curl.
-- chmod +x run.sh
-
-### 3. Python env
-From the project root:
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-python -m pip install --upgrade pip
-pip install -r requirements.txt
-```
-
-Smoke import:
+## 2. Set it up and start it
+On macOS (the normal case):
 
 ```bash
-python -c "from app.bank import ITEMS; from app.config import DEFAULT_TRACK; print(len(ITEMS), DEFAULT_TRACK)"
+chmod +x run.sh "Start AFOQT Coach.command"
+./run.sh
 ```
 
-Expect DEFAULT_TRACK == cyber_software and ITEMS >= 90.
+This creates `.venv`, installs `requirements.txt` into it, and starts the
+server at http://127.0.0.1:8765. Run it in the background (or in a way you can
+keep monitoring) rather than leaving it attached and blocking your only
+shell — you still need to run health checks next.
 
-### 4. Optional local LLM (do this unless the user says skip)
-Check `which ollama`. If missing:
+If `python3` is missing: `brew install python` (installs Homebrew first if
+needed — see https://brew.sh — then retry).
+
+If port 8765 is already in use by an old copy, find and stop that process
+first rather than picking a different port; the frontend and any bookmarks
+assume 8765.
+
+### Optional: local LLM for the Coach chat feature
+Quizzes, flashcards, and readiness tracking all work with zero setup. Only
+the "Coach" chat tab and "Add a few AI questions" need a local LLM:
 
 ```bash
 brew install ollama
+brew services start ollama
+ollama pull llama3.1     # needs ~16GB RAM; use llama3.2 if the Mac has less
 ```
 
-Start the daemon if it is not up:
+This step can take a while to download the model — that's completely normal,
+not a hang. If she's watching, mention that once the app is open, the Coach
+tab and Learn tab's "Explain this to me" button both have a little bubble-pop
+mini-game that appears automatically during any wait like this.
 
-```bash
-brew services start ollama || ollama serve
-```
+Skip this step entirely if she says she doesn't want it — the app is fully
+useful without it.
 
-Wait until `curl -sf http://127.0.0.1:11434/api/tags` works.
-
-Pick a model by RAM:
-- 16 GB or more: `ollama pull llama3.1`
-- 8 GB: `ollama pull llama3.2`
-- tight disk: `ollama pull phi3`
-
-Do not pull a 70B model.
-
-### 5. Launch
-If port 8765 is already taken by an old copy, kill that process.
-
-```bash
-source .venv/bin/activate
-python -m uvicorn app.main:app --host 127.0.0.1 --port 8765 --reload
-```
-
-Keep it running in the background.
-
-### 6. Verify
+## 3. Verify it actually works
 ```bash
 curl -s http://127.0.0.1:8765/api/health
 curl -s http://127.0.0.1:8765/api/readiness
-curl -s http://127.0.0.1:8765/api/knowledge?topic=cyber_software | head
+curl -s http://127.0.0.1:8765/api/flashcards | head -c 200
 ```
+`health.ok` must be `true`. If Ollama was installed, `health.ollama.ok` should
+also become `true` once the model finishes pulling (may take a few minutes
+after `ollama pull` completes).
 
-health.ok must be true.
-readiness.target_track should be cyber_software.
-If Ollama is up, health.ollama.ok should be true and models should be non-empty.
+Open it for her: `open http://127.0.0.1:8765`
 
-Open http://127.0.0.1:8765 in the default browser (`open http://127.0.0.1:8765`).
+Click through once yourself: the tabs are My Progress, Learn, Flashcards,
+Practice, and Coach. Confirm the page actually loads with content (not a blank
+page or an error) before telling her it's done.
 
-### 7. Report back
-Tell the user:
-- project path
-- Python version
-- whether Ollama and which model
-- URL
-- that quizzes work offline even if Ollama failed
-- first study move: timed Math Knowledge quiz, then Arithmetic Reasoning, then Word Knowledge
+## 4. Leave her with a simple, friendly how-to
+This is the most important part — don't skip it or make it a wall of text.
+Once everything above is verified working, write her a short, warm message
+(not a technical readme dump) covering exactly these four things:
 
-Do not start a long lecture about the AFOQT. The app already contains the study pack.
-```
+**Turning it on** — Double-click `Start AFOQT Coach.command` in the project
+folder. A small Terminal window will open; that's normal, just leave it be.
+Her browser will open to the app automatically after a few seconds.
 
----
+**Turning it off** — Close that Terminal window (or click into it and press
+Control+C). That stops the app. Her progress is saved automatically and will
+still be there next time.
 
-## Shorter variant (if the folder is already open in Claude Code)
+**Updating it** — If you (or she) ever pull new changes into this folder,
+just turn it off and back on again (close the Terminal window, double-click
+the launcher again) — no reinstall needed unless a brand-new dependency was
+added, in which case re-run `./run.sh` once from a terminal instead of the
+`.command` file so it can reinstall.
 
-```
-Install and launch this AFOQT Coach project on this Mac.
+**Using it** — One or two lines per tab, in plain language:
+- *My Progress* — her dashboard: overall readiness, what to study next.
+- *Learn* — the full study guide, organized by topic.
+- *Flashcards* — quick-fire vocab, formulas, and definitions.
+- *Practice* — timed or untimed quizzes, by section or mixed, with adjustable
+  difficulty.
+- *Coach* — a chat tutor she can ask for explanations or quick drills (only
+  live if Ollama is installed and running).
 
-Create .venv, pip install -r requirements.txt, chmod +x run.sh.
-If python3 or brew tools are missing, install them.
-If Ollama is missing, brew install ollama, start it, and pull llama3.1 (llama3.2 if RAM is 8GB).
-Bind uvicorn to 127.0.0.1:8765 only, leave it running, curl /api/health and /api/readiness,
-open the URL in the browser.
-Default track is cyber/software. Do not expose the port publicly.
-Do not add claimed official AFOQT items. Report path, model, and URL when done.
+Keep the whole message short enough that she'd actually read it — a few
+sentences per section, not paragraphs. Do not lecture her about the AFOQT
+itself; the app already has that covered.
 ```

@@ -1,12 +1,13 @@
 # Verbal knowledge (VA + WK + RC)
 
-Verbal composite = VA + WK + RC. Also feeds Academic and parts of ABM/CSO depending on recipe.
+Quick orientation: Verbal Analogies (VA), Word Knowledge (WK), and Reading Comprehension (RC) add up to your Verbal composite. This section also feeds Academic Aptitude, and parts of ABM/CSO depending on which composite recipe you're looking at.
 
-## Verbal Analogies — relationship first, vocab second
+## Verbal Analogies — figure out the relationship first, vocab second
 
-Build a bridge sentence for the stem pair. The correct choice is the pair that uses the SAME relationship in the SAME direction. Preserve part of speech.
+Here's the trick that makes this section click: build a short "bridge sentence" connecting the first pair of words. Then find the answer choice whose pair uses that exact SAME relationship, in the SAME direction. Also check that the part of speech matches.
 
-### High-yield relationship types
+### The relationship types that show up most
+
 1. Synonym — big : large
 2. Antonym — barren : fertile
 3. Degree / intensity — warm : hot :: cool : freezing
@@ -25,22 +26,24 @@ Build a bridge sentence for the stem pair. The correct choice is the pair that u
 16. Symbol to concept — dove : peace
 17. Function — dam : flood (prevents)
 18. Lack of — coward : courage
-19. Gender / adult-young — mare : foal (use carefully; many modern tests avoid)
+19. Gender / adult-young — mare : foal (use carefully; many modern tests avoid this type)
 20. Grammatical form — sing : sang (tense)
 
-### Method (~19 seconds)
-1. Read stem pair. State the bridge in 6 words or less.
-2. Scan choices. Kill any that break the bridge.
-3. If two remain, tighten the bridge (direction, intensity, specificity).
-4. Guess among leftovers. Move.
+### A method that fits in about 19 seconds
 
-Never pick a pair that is merely "also related to the topic."
+1. Read the first pair. Say the bridge to yourself in six words or less.
+2. Scan the choices. Cross out anything that breaks the bridge.
+3. If two choices are still standing, tighten the bridge — get more specific about direction, intensity, or category.
+4. If you're still stuck, guess between what's left, and move on. Don't let one question eat your clock.
 
-## Word Knowledge — 12 seconds, synonym only
+One rule that saves you from a classic trap: never pick a pair just because it's "also kind of related to the same topic." It has to match the actual relationship, not just the subject matter.
 
-You will not know every word. Decode.
+## Word Knowledge — 12 seconds a question, straight synonyms
 
-### Prefixes
+Nobody knows every word on this section — that's normal, not a sign you're behind. The move is to decode words you don't immediately recognize, using the pieces you do know.
+
+### Prefixes (the front of the word)
+
 - a-/an- without (amoral)
 - anti- against
 - auto- self
@@ -76,7 +79,8 @@ You will not know every word. Decode.
 - un- not
 - uni- one
 
-### Roots
+### Roots (the core of the word)
+
 - anthrop human
 - aud hear
 - bene good
@@ -115,7 +119,8 @@ You will not know every word. Decode.
 - voc/vok voice/call
 - vol wish
 
-### Suffixes
+### Suffixes (the end of the word)
+
 - -able/-ible capable of
 - -ate make/become
 - -cide kill
@@ -131,30 +136,37 @@ You will not know every word. Decode.
 - -tion/-sion act/state
 - -tude state
 
-### High-frequency officer-test vocabulary (know these cold)
+### Words worth just knowing cold
+
+These show up often enough on officer-style tests that it's worth memorizing them outright, no decoding needed:
+
 abate, abdicate, aberrant, abhor, abrasive, abridge, abscond, abstruse, accolade, acquiesce, acrimony, adroit, aesthetic, alacrity, alleviate, aloof, ambiguous, ambivalent, ameliorate, amiable, anachronism, analogous, anomaly, antithesis, apathetic, arbitrary, arid, assuage, astute, austere, banal, belligerent, benevolent, bolster, bombastic, brevity, cacophony, candid, capricious, caustic, censure, coerce, cognizant, commensurate, compile, concede, conciliatory, condone, conflagration, confluence, conjecture, conscientious, constraint, contempt, copious, corroborate, credulous, cursory, daunt, dearth, decorum, deference, deleterious, delineate, demure, deride, despot, diligent, discern, discrepancy, disdain, disingenuous, disparage, disseminate, dogmatic, dubious, eccentric, eclectic, efface, egregious, eloquent, elusive, embellish, eminent, empirical, emulate, enigma, ephemeral, equitable, erudite, esoteric, eulogy, evade, exacerbate, exalt, exemplary, explicit, exploit, extol, facilitate, fallacious, fastidious, fervent, flagrant, fortuitous, frivolous, frugal, furtive, garner, garrulous, gratuitous, gravity (seriousness), gregarious, hackneyed, harbinger, haughty, hedonist, hypothesis, iconoclast, idiosyncrasy, imminent, immutable, impartial, impede, impertinent, implicit, inadvertent, inaugurate, incisive, incongruous, indigenous, indolent, induce, ineffable, inevitable, infer, ingenuous, inherent, innocuous, insipid, intrepid, inundate, invoke, ironic, jaded, judicious, juxtapose, lament, latent, laud, lethargic, levity, lucid, magnanimous, malevolent, myriad, naive, narcissist, nascent, negligent, nonchalant, notorious, novel, nuance, obsolete, ominous, opaque, ostentatious, paradox, partisan, paucity, pedantic, penchant, perfunctory, peripheral, pervasive, philanthropy, pious, placate, pragmatic, precarious, precedent, pretentious, prolific, proximity, prudent, punctilious, quandary, querulous, rancor, rebuke, recalcitrant, reclusive, redundant, refute, relegate, relevant, remorse, reprehensible, resilient, restrained, reticent, revere, rhetoric, rigor, sagacious, sanction (approve OR punish — context), scrutinize, servile, skeptical, solemn, somber, sporadic, spurious, stagnant, static, stoic, stringent, subdued, succinct, superfluous, surreptitious, sycophant, taciturn, tenacious, terse, timid, tirade, transient, trepidation, trite, truncate, ubiquitous, unctuous, undermine, unobtrusive, unprecedented, urbane, vacillate, vehement, veneer, venerate, verbose, viable, vilify, vindicate, virtuoso, virulent, volatile, whimsical, zealot
 
-### WK method
-Read the five choices first if the stem is unknown. Kill antonyms and unrelated registers. Prefer the synonym that matches intensity (annoyed ≠ furious).
+### How to actually work a WK question
+
+If you don't recognize the stem word, read all five choices first. Cross out anything that's an antonym or feels like it's from a totally different register (too casual or too formal). Then pick the synonym that matches not just the meaning but the *intensity* — "annoyed" is not the same strength as "furious," even though they live in the same neighborhood.
 
 ## Reading Comprehension
 
-Passages are often military history, science, policy, or leadership. Questions: main idea, purpose, inference, detail, vocab-in-context, tone.
+Passages tend to be about military history, science, policy, or leadership. Expect questions about the main idea, the author's purpose, inferences, small details, vocabulary in context, and tone.
 
-### Method
-1. Read the first and last sentences of the passage. That is usually the claim.
-2. Skim paragraph starts.
-3. Read the question stem before hunting details.
-4. Answer must be supported. "The author would agree" ≠ "true in real life."
-5. Kill extremes: always, never, proves, all, none — unless the passage is that absolute.
-6. Tone words: objective, skeptical, cautionary, admiring, critical, urgent, measured.
+### A method that works under time pressure
 
-### Question types
-- Main idea: the whole passage, not a supporting example.
-- Purpose: why the author wrote it (inform, argue, contrast, warn).
-- Inference: must be true if the passage is true, but not copied verbatim.
-- Detail: go back and find the line. Do not rely on memory after speed-reading.
-- Structure: "paragraph 2 does what relative to paragraph 1?"
+1. Read the first and last sentence of the passage first. That's usually where the main claim lives.
+2. Skim the first sentence of each paragraph.
+3. Read the question itself before you go hunting for the answer in the text.
+4. The right answer has to be supported by the passage. "The author would agree with this" is not the same thing as "this is true in real life" — don't mix those up.
+5. Be suspicious of extreme words: always, never, proves, all, none. Only pick them if the passage itself is that absolute.
+6. Notice tone: objective, skeptical, cautionary, admiring, critical, urgent, measured.
 
-### Pace
-Official pamphlet times vary in public sources (24 vs 38 minutes). Practice at 24 minutes / 25 items so the slower official clock, if present, is a gift.
+### The question types you'll see
+
+- **Main idea**: the whole passage's point — not just one example from it.
+- **Purpose**: why the author wrote it at all (to inform, argue, contrast, warn).
+- **Inference**: something that must be true if the passage is true, even though it's not stated word-for-word.
+- **Detail**: go back and actually find the line in the text. Don't trust your memory after speed-reading.
+- **Structure**: things like "what does paragraph 2 do relative to paragraph 1?"
+
+### Pacing
+
+Public sources don't agree on the official time for this section (24 minutes vs. 38 minutes). Practice at the tighter 24 minutes for 25 items — that way, if the real clock turns out to be the slower one, it's a bonus, not a shock.

@@ -40,16 +40,33 @@ def sample_quiz(
     exclude_ids: set[str] | None = None,
 ) -> dict[str, Any]:
     pool = by_subtest(subtest)
-    if difficulty and difficulty != "any":
-        filtered = [i for i in pool if i.get("difficulty") == difficulty]
-        if filtered:
-            pool = filtered
     if exclude_ids:
         reduced = [i for i in pool if i["id"] not in exclude_ids]
         if reduced:
             pool = reduced
     if not pool:
         pool = by_subtest(subtest) or ITEMS
+
+    n = max(1, n)
+    note = None
+    if difficulty and difficulty != "any":
+        exact = [i for i in pool if i.get("difficulty") == difficulty]
+        if len(exact) < n:
+            others = [i for i in pool if i.get("difficulty") != difficulty]
+            random.shuffle(others)
+            fill = others[: n - len(exact)]
+            got = len(exact) + len(fill)
+            if exact and fill:
+                note = (
+                    f"Only {len(exact)} '{difficulty}' item(s) in the bank for this subtest — "
+                    f"filled the remaining {len(fill)} from other difficulties to reach {got}."
+                )
+            elif fill:
+                note = f"No '{difficulty}' items for this subtest yet — showing mixed difficulty instead."
+            pool = exact + fill
+        else:
+            pool = exact
+
     n = max(1, min(n, len(pool)))
     picked = random.sample(pool, n)
     meta = SUBTESTS.get(subtest, {"pace": 30, "minutes": 0, "items": n})
@@ -59,6 +76,7 @@ def sample_quiz(
         "subtest": subtest,
         "timed_seconds": timed,
         "target_pace_sec_per_item": meta["pace"],
+        "note": note,
         "items": [
             {
                 "id": i["id"],
@@ -79,7 +97,10 @@ def grade(responses: list[dict[str, Any]], extra_items: list[dict[str, Any]] | N
     """responses: [{id, selected, time_sec}]"""
     index = {i["id"]: i for i in ITEMS}
     for item in extra_items or []:
-        if item.get("id"):
+        # Only fills in items the static bank doesn't already have (e.g. LLM-generated
+        # extras) -- must never clobber a real bank item with its trimmed client copy,
+        # which is missing fields like "subtest" that readiness tracking depends on.
+        if item.get("id") and item["id"] not in index:
             index[item["id"]] = item
     results = []
     correct = 0

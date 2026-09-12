@@ -1,0 +1,1508 @@
+[
+  {
+    "id": "voc-001",
+    "deck": "vocabulary",
+    "front": "abate",
+    "back": "to lessen or die down"
+  },
+  {
+    "id": "voc-002",
+    "deck": "vocabulary",
+    "front": "abdicate",
+    "back": "to give up power or a duty"
+  },
+  {
+    "id": "voc-003",
+    "deck": "vocabulary",
+    "front": "aberrant",
+    "back": "deviating from what's normal; abnormal"
+  },
+  {
+    "id": "voc-004",
+    "deck": "vocabulary",
+    "front": "abhor",
+    "back": "to hate intensely"
+  },
+  {
+    "id": "voc-005",
+    "deck": "vocabulary",
+    "front": "abrasive",
+    "back": "harsh or irritating in manner"
+  },
+  {
+    "id": "voc-006",
+    "deck": "vocabulary",
+    "front": "abridge",
+    "back": "to shorten, while keeping the main points"
+  },
+  {
+    "id": "voc-007",
+    "deck": "vocabulary",
+    "front": "abscond",
+    "back": "to run off secretly to escape trouble"
+  },
+  {
+    "id": "voc-008",
+    "deck": "vocabulary",
+    "front": "abstruse",
+    "back": "hard to understand; obscure"
+  },
+  {
+    "id": "voc-009",
+    "deck": "vocabulary",
+    "front": "accolade",
+    "back": "an award or high praise"
+  },
+  {
+    "id": "voc-010",
+    "deck": "vocabulary",
+    "front": "acquiesce",
+    "back": "to reluctantly go along with something"
+  },
+  {
+    "id": "voc-011",
+    "deck": "vocabulary",
+    "front": "acrimony",
+    "back": "bitterness and anger in speech or manner"
+  },
+  {
+    "id": "voc-012",
+    "deck": "vocabulary",
+    "front": "adroit",
+    "back": "skillful and clever"
+  },
+  {
+    "id": "voc-013",
+    "deck": "vocabulary",
+    "front": "aesthetic",
+    "back": "relating to beauty or artistic taste"
+  },
+  {
+    "id": "voc-014",
+    "deck": "vocabulary",
+    "front": "alacrity",
+    "back": "eager, brisk readiness"
+  },
+  {
+    "id": "voc-015",
+    "deck": "vocabulary",
+    "front": "alleviate",
+    "back": "to make pain or a problem less severe"
+  },
+  {
+    "id": "voc-016",
+    "deck": "vocabulary",
+    "front": "aloof",
+    "back": "distant and uninvolved; standoffish"
+  },
+  {
+    "id": "voc-017",
+    "deck": "vocabulary",
+    "front": "ambiguous",
+    "back": "unclear; open to more than one meaning"
+  },
+  {
+    "id": "voc-018",
+    "deck": "vocabulary",
+    "front": "ambivalent",
+    "back": "having mixed or conflicting feelings"
+  },
+  {
+    "id": "voc-019",
+    "deck": "vocabulary",
+    "front": "ameliorate",
+    "back": "to make a bad situation better"
+  },
+  {
+    "id": "voc-020",
+    "deck": "vocabulary",
+    "front": "amiable",
+    "back": "friendly and easy to get along with"
+  },
+  {
+    "id": "voc-021",
+    "deck": "vocabulary",
+    "front": "anachronism",
+    "back": "something out of its proper time period"
+  },
+  {
+    "id": "voc-022",
+    "deck": "vocabulary",
+    "front": "analogous",
+    "back": "similar enough to make a fair comparison"
+  },
+  {
+    "id": "voc-023",
+    "deck": "vocabulary",
+    "front": "anomaly",
+    "back": "something that doesn't fit the normal pattern"
+  },
+  {
+    "id": "voc-024",
+    "deck": "vocabulary",
+    "front": "antithesis",
+    "back": "the exact opposite"
+  },
+  {
+    "id": "voc-025",
+    "deck": "vocabulary",
+    "front": "apathetic",
+    "back": "not caring; showing no interest"
+  },
+  {
+    "id": "voc-026",
+    "deck": "vocabulary",
+    "front": "arbitrary",
+    "back": "based on random whim, not reason"
+  },
+  {
+    "id": "voc-027",
+    "deck": "vocabulary",
+    "front": "arid",
+    "back": "very dry"
+  },
+  {
+    "id": "voc-028",
+    "deck": "vocabulary",
+    "front": "assuage",
+    "back": "to ease or calm a bad feeling"
+  },
+  {
+    "id": "voc-029",
+    "deck": "vocabulary",
+    "front": "astute",
+    "back": "sharp and shrewd; good at judging things"
+  },
+  {
+    "id": "voc-030",
+    "deck": "vocabulary",
+    "front": "austere",
+    "back": "plain and strict, without luxury"
+  },
+  {
+    "id": "voc-031",
+    "deck": "vocabulary",
+    "front": "banal",
+    "back": "boring from being so overused; unoriginal"
+  },
+  {
+    "id": "voc-032",
+    "deck": "vocabulary",
+    "front": "belligerent",
+    "back": "eager to fight; hostile"
+  },
+  {
+    "id": "voc-033",
+    "deck": "vocabulary",
+    "front": "benevolent",
+    "back": "kind and generous"
+  },
+  {
+    "id": "voc-034",
+    "deck": "vocabulary",
+    "front": "bolster",
+    "back": "to support or strengthen"
+  },
+  {
+    "id": "voc-035",
+    "deck": "vocabulary",
+    "front": "bombastic",
+    "back": "speaking in a grand, pompous way"
+  },
+  {
+    "id": "voc-036",
+    "deck": "vocabulary",
+    "front": "brevity",
+    "back": "shortness, especially in speech or writing"
+  },
+  {
+    "id": "voc-037",
+    "deck": "vocabulary",
+    "front": "cacophony",
+    "back": "a harsh mix of loud, clashing sounds"
+  },
+  {
+    "id": "voc-038",
+    "deck": "vocabulary",
+    "front": "candid",
+    "back": "honest and straightforward, sometimes bluntly"
+  },
+  {
+    "id": "voc-039",
+    "deck": "vocabulary",
+    "front": "capricious",
+    "back": "unpredictable; prone to sudden changes of mind"
+  },
+  {
+    "id": "voc-040",
+    "deck": "vocabulary",
+    "front": "caustic",
+    "back": "harshly critical or sarcastic"
+  },
+  {
+    "id": "voc-041",
+    "deck": "vocabulary",
+    "front": "censure",
+    "back": "to formally criticize or condemn"
+  },
+  {
+    "id": "voc-042",
+    "deck": "vocabulary",
+    "front": "coerce",
+    "back": "to force someone into doing something"
+  },
+  {
+    "id": "voc-043",
+    "deck": "vocabulary",
+    "front": "cognizant",
+    "back": "aware of something"
+  },
+  {
+    "id": "voc-044",
+    "deck": "vocabulary",
+    "front": "commensurate",
+    "back": "matching in size or degree; proportionate"
+  },
+  {
+    "id": "voc-045",
+    "deck": "vocabulary",
+    "front": "compile",
+    "back": "to gather into one collection"
+  },
+  {
+    "id": "voc-046",
+    "deck": "vocabulary",
+    "front": "concede",
+    "back": "to admit something is true, reluctantly"
+  },
+  {
+    "id": "voc-047",
+    "deck": "vocabulary",
+    "front": "conciliatory",
+    "back": "trying to make peace, smooth things over"
+  },
+  {
+    "id": "voc-048",
+    "deck": "vocabulary",
+    "front": "condone",
+    "back": "to overlook or implicitly accept bad behavior"
+  },
+  {
+    "id": "voc-049",
+    "deck": "vocabulary",
+    "front": "conflagration",
+    "back": "a huge, destructive fire"
+  },
+  {
+    "id": "voc-050",
+    "deck": "vocabulary",
+    "front": "confluence",
+    "back": "a flowing together, like two rivers meeting"
+  },
+  {
+    "id": "voc-051",
+    "deck": "vocabulary",
+    "front": "conjecture",
+    "back": "a guess based on incomplete information"
+  },
+  {
+    "id": "voc-052",
+    "deck": "vocabulary",
+    "front": "conscientious",
+    "back": "careful, thorough, guided by right and wrong"
+  },
+  {
+    "id": "voc-053",
+    "deck": "vocabulary",
+    "front": "constraint",
+    "back": "a limit or restriction"
+  },
+  {
+    "id": "voc-054",
+    "deck": "vocabulary",
+    "front": "contempt",
+    "back": "a feeling that something deserves no respect"
+  },
+  {
+    "id": "voc-055",
+    "deck": "vocabulary",
+    "front": "copious",
+    "back": "a large, abundant amount"
+  },
+  {
+    "id": "voc-056",
+    "deck": "vocabulary",
+    "front": "corroborate",
+    "back": "to confirm with supporting evidence"
+  },
+  {
+    "id": "voc-057",
+    "deck": "vocabulary",
+    "front": "credulous",
+    "back": "too willing to believe things; gullible"
+  },
+  {
+    "id": "voc-058",
+    "deck": "vocabulary",
+    "front": "cursory",
+    "back": "quick and not thorough"
+  },
+  {
+    "id": "voc-059",
+    "deck": "vocabulary",
+    "front": "daunt",
+    "back": "to intimidate; make someone lose nerve"
+  },
+  {
+    "id": "voc-060",
+    "deck": "vocabulary",
+    "front": "dearth",
+    "back": "a scarcity or lack of something"
+  },
+  {
+    "id": "voc-061",
+    "deck": "vocabulary",
+    "front": "decorum",
+    "back": "polite, proper behavior"
+  },
+  {
+    "id": "voc-062",
+    "deck": "vocabulary",
+    "front": "deference",
+    "back": "respectfully yielding to someone's authority or wishes"
+  },
+  {
+    "id": "voc-063",
+    "deck": "vocabulary",
+    "front": "deleterious",
+    "back": "harmful, damaging"
+  },
+  {
+    "id": "voc-064",
+    "deck": "vocabulary",
+    "front": "delineate",
+    "back": "to describe or outline precisely"
+  },
+  {
+    "id": "voc-065",
+    "deck": "vocabulary",
+    "front": "demure",
+    "back": "shy and modest in manner"
+  },
+  {
+    "id": "voc-066",
+    "deck": "vocabulary",
+    "front": "deride",
+    "back": "to mock or ridicule"
+  },
+  {
+    "id": "voc-067",
+    "deck": "vocabulary",
+    "front": "despot",
+    "back": "a ruler with total, often cruel, power"
+  },
+  {
+    "id": "voc-068",
+    "deck": "vocabulary",
+    "front": "diligent",
+    "back": "hardworking and careful"
+  },
+  {
+    "id": "voc-069",
+    "deck": "vocabulary",
+    "front": "discern",
+    "back": "to notice or figure out something not obvious"
+  },
+  {
+    "id": "voc-070",
+    "deck": "vocabulary",
+    "front": "discrepancy",
+    "back": "a difference between things that should match"
+  },
+  {
+    "id": "voc-071",
+    "deck": "vocabulary",
+    "front": "disdain",
+    "back": "looking down on something with contempt"
+  },
+  {
+    "id": "voc-072",
+    "deck": "vocabulary",
+    "front": "disingenuous",
+    "back": "not honest about your real motives"
+  },
+  {
+    "id": "voc-073",
+    "deck": "vocabulary",
+    "front": "disparage",
+    "back": "to put down or dismiss critically"
+  },
+  {
+    "id": "voc-074",
+    "deck": "vocabulary",
+    "front": "disseminate",
+    "back": "to spread information widely"
+  },
+  {
+    "id": "voc-075",
+    "deck": "vocabulary",
+    "front": "dogmatic",
+    "back": "insisting you're right, closed to other views"
+  },
+  {
+    "id": "voc-076",
+    "deck": "vocabulary",
+    "front": "dubious",
+    "back": "doubtful; not to be trusted"
+  },
+  {
+    "id": "voc-077",
+    "deck": "vocabulary",
+    "front": "eccentric",
+    "back": "unusual or quirky, in a harmless way"
+  },
+  {
+    "id": "voc-078",
+    "deck": "vocabulary",
+    "front": "eclectic",
+    "back": "made up of a mix of different styles"
+  },
+  {
+    "id": "voc-079",
+    "deck": "vocabulary",
+    "front": "efface",
+    "back": "to erase, or make yourself inconspicuous"
+  },
+  {
+    "id": "voc-080",
+    "deck": "vocabulary",
+    "front": "egregious",
+    "back": "shockingly, outstandingly bad"
+  },
+  {
+    "id": "voc-081",
+    "deck": "vocabulary",
+    "front": "eloquent",
+    "back": "expressing ideas fluently and persuasively"
+  },
+  {
+    "id": "voc-082",
+    "deck": "vocabulary",
+    "front": "elusive",
+    "back": "hard to catch, find, or pin down"
+  },
+  {
+    "id": "voc-083",
+    "deck": "vocabulary",
+    "front": "embellish",
+    "back": "to add exaggerated extra detail"
+  },
+  {
+    "id": "voc-084",
+    "deck": "vocabulary",
+    "front": "eminent",
+    "back": "well-known and respected in a field"
+  },
+  {
+    "id": "voc-085",
+    "deck": "vocabulary",
+    "front": "empirical",
+    "back": "based on observation or testing, not theory alone"
+  },
+  {
+    "id": "voc-086",
+    "deck": "vocabulary",
+    "front": "emulate",
+    "back": "to try to match or imitate someone admired"
+  },
+  {
+    "id": "voc-087",
+    "deck": "vocabulary",
+    "front": "enigma",
+    "back": "a puzzling mystery"
+  },
+  {
+    "id": "voc-088",
+    "deck": "vocabulary",
+    "front": "ephemeral",
+    "back": "lasting only a short time"
+  },
+  {
+    "id": "voc-089",
+    "deck": "vocabulary",
+    "front": "equitable",
+    "back": "fair, especially in how things are shared"
+  },
+  {
+    "id": "voc-090",
+    "deck": "vocabulary",
+    "front": "erudite",
+    "back": "deeply learned; well-read"
+  },
+  {
+    "id": "voc-091",
+    "deck": "vocabulary",
+    "front": "esoteric",
+    "back": "understood by only a small, specialized group"
+  },
+  {
+    "id": "voc-092",
+    "deck": "vocabulary",
+    "front": "eulogy",
+    "back": "a speech praising someone, usually after they die"
+  },
+  {
+    "id": "voc-093",
+    "deck": "vocabulary",
+    "front": "evade",
+    "back": "to avoid or escape through trickery"
+  },
+  {
+    "id": "voc-094",
+    "deck": "vocabulary",
+    "front": "exacerbate",
+    "back": "to make a problem worse"
+  },
+  {
+    "id": "voc-095",
+    "deck": "vocabulary",
+    "front": "exalt",
+    "back": "to praise highly or raise up in status"
+  },
+  {
+    "id": "voc-096",
+    "deck": "vocabulary",
+    "front": "exemplary",
+    "back": "so good it's a model to follow"
+  },
+  {
+    "id": "voc-097",
+    "deck": "vocabulary",
+    "front": "explicit",
+    "back": "stated clearly and directly"
+  },
+  {
+    "id": "voc-098",
+    "deck": "vocabulary",
+    "front": "exploit",
+    "back": "to take unfair advantage of; or to make use of"
+  },
+  {
+    "id": "voc-099",
+    "deck": "vocabulary",
+    "front": "extol",
+    "back": "to praise enthusiastically"
+  },
+  {
+    "id": "voc-100",
+    "deck": "vocabulary",
+    "front": "facilitate",
+    "back": "to make something easier to do"
+  },
+  {
+    "id": "voc-101",
+    "deck": "vocabulary",
+    "front": "fallacious",
+    "back": "based on a flawed, misleading argument"
+  },
+  {
+    "id": "voc-102",
+    "deck": "vocabulary",
+    "front": "fastidious",
+    "back": "extremely picky about details"
+  },
+  {
+    "id": "voc-103",
+    "deck": "vocabulary",
+    "front": "fervent",
+    "back": "showing intense, passionate feeling"
+  },
+  {
+    "id": "voc-104",
+    "deck": "vocabulary",
+    "front": "flagrant",
+    "back": "obviously and shamelessly wrong"
+  },
+  {
+    "id": "voc-105",
+    "deck": "vocabulary",
+    "front": "fortuitous",
+    "back": "happening by lucky chance"
+  },
+  {
+    "id": "voc-106",
+    "deck": "vocabulary",
+    "front": "frivolous",
+    "back": "not serious; silly or trivial"
+  },
+  {
+    "id": "voc-107",
+    "deck": "vocabulary",
+    "front": "frugal",
+    "back": "careful with money; avoids waste"
+  },
+  {
+    "id": "voc-108",
+    "deck": "vocabulary",
+    "front": "furtive",
+    "back": "secretive and sneaky"
+  },
+  {
+    "id": "voc-109",
+    "deck": "vocabulary",
+    "front": "garner",
+    "back": "to gather or collect, usually support or praise"
+  },
+  {
+    "id": "voc-110",
+    "deck": "vocabulary",
+    "front": "garrulous",
+    "back": "overly talkative, especially about small things"
+  },
+  {
+    "id": "voc-111",
+    "deck": "vocabulary",
+    "front": "gratuitous",
+    "back": "unnecessary and uncalled for"
+  },
+  {
+    "id": "voc-112",
+    "deck": "vocabulary",
+    "front": "gravity",
+    "back": "the seriousness or weight of a situation"
+  },
+  {
+    "id": "voc-113",
+    "deck": "vocabulary",
+    "front": "gregarious",
+    "back": "outgoing; enjoys being around people"
+  },
+  {
+    "id": "voc-114",
+    "deck": "vocabulary",
+    "front": "hackneyed",
+    "back": "overused to the point of feeling stale"
+  },
+  {
+    "id": "voc-115",
+    "deck": "vocabulary",
+    "front": "harbinger",
+    "back": "a sign that something is coming"
+  },
+  {
+    "id": "voc-116",
+    "deck": "vocabulary",
+    "front": "haughty",
+    "back": "arrogantly proud; looks down on others"
+  },
+  {
+    "id": "voc-117",
+    "deck": "vocabulary",
+    "front": "hedonist",
+    "back": "someone focused on chasing pleasure"
+  },
+  {
+    "id": "voc-118",
+    "deck": "vocabulary",
+    "front": "hypothesis",
+    "back": "an educated guess to be tested"
+  },
+  {
+    "id": "voc-119",
+    "deck": "vocabulary",
+    "front": "iconoclast",
+    "back": "someone who challenges accepted beliefs or traditions"
+  },
+  {
+    "id": "voc-120",
+    "deck": "vocabulary",
+    "front": "idiosyncrasy",
+    "back": "a quirky, individual habit or trait"
+  },
+  {
+    "id": "voc-121",
+    "deck": "vocabulary",
+    "front": "imminent",
+    "back": "about to happen very soon"
+  },
+  {
+    "id": "voc-122",
+    "deck": "vocabulary",
+    "front": "immutable",
+    "back": "unable to be changed"
+  },
+  {
+    "id": "voc-123",
+    "deck": "vocabulary",
+    "front": "impartial",
+    "back": "fair; not favoring one side"
+  },
+  {
+    "id": "voc-124",
+    "deck": "vocabulary",
+    "front": "impede",
+    "back": "to slow down or block progress"
+  },
+  {
+    "id": "voc-125",
+    "deck": "vocabulary",
+    "front": "impertinent",
+    "back": "rudely disrespectful; overstepping bounds"
+  },
+  {
+    "id": "voc-126",
+    "deck": "vocabulary",
+    "front": "implicit",
+    "back": "understood without being directly stated"
+  },
+  {
+    "id": "voc-127",
+    "deck": "vocabulary",
+    "front": "inadvertent",
+    "back": "unintentional; by accident"
+  },
+  {
+    "id": "voc-128",
+    "deck": "vocabulary",
+    "front": "inaugurate",
+    "back": "to formally begin, or induct into office"
+  },
+  {
+    "id": "voc-129",
+    "deck": "vocabulary",
+    "front": "incisive",
+    "back": "sharp and clear in thinking or expression"
+  },
+  {
+    "id": "voc-130",
+    "deck": "vocabulary",
+    "front": "incongruous",
+    "back": "out of place; doesn't fit its surroundings"
+  },
+  {
+    "id": "voc-131",
+    "deck": "vocabulary",
+    "front": "indigenous",
+    "back": "native to a particular place"
+  },
+  {
+    "id": "voc-132",
+    "deck": "vocabulary",
+    "front": "indolent",
+    "back": "lazy"
+  },
+  {
+    "id": "voc-133",
+    "deck": "vocabulary",
+    "front": "induce",
+    "back": "to bring about, or to persuade"
+  },
+  {
+    "id": "voc-134",
+    "deck": "vocabulary",
+    "front": "ineffable",
+    "back": "too intense or great to put into words"
+  },
+  {
+    "id": "voc-135",
+    "deck": "vocabulary",
+    "front": "inevitable",
+    "back": "certain to happen; unavoidable"
+  },
+  {
+    "id": "voc-136",
+    "deck": "vocabulary",
+    "front": "infer",
+    "back": "to figure out from clues, not a direct statement"
+  },
+  {
+    "id": "voc-137",
+    "deck": "vocabulary",
+    "front": "ingenuous",
+    "back": "innocently trusting and honest, sometimes naively"
+  },
+  {
+    "id": "voc-138",
+    "deck": "vocabulary",
+    "front": "inherent",
+    "back": "a natural, built-in part of something"
+  },
+  {
+    "id": "voc-139",
+    "deck": "vocabulary",
+    "front": "innocuous",
+    "back": "harmless"
+  },
+  {
+    "id": "voc-140",
+    "deck": "vocabulary",
+    "front": "insipid",
+    "back": "bland; lacking flavor or interest"
+  },
+  {
+    "id": "voc-141",
+    "deck": "vocabulary",
+    "front": "intrepid",
+    "back": "fearless and adventurous"
+  },
+  {
+    "id": "voc-142",
+    "deck": "vocabulary",
+    "front": "inundate",
+    "back": "to overwhelm or flood"
+  },
+  {
+    "id": "voc-143",
+    "deck": "vocabulary",
+    "front": "invoke",
+    "back": "to call upon or bring into play"
+  },
+  {
+    "id": "voc-144",
+    "deck": "vocabulary",
+    "front": "ironic",
+    "back": "the opposite of what you'd expect"
+  },
+  {
+    "id": "voc-145",
+    "deck": "vocabulary",
+    "front": "jaded",
+    "back": "worn out and cynical from too much experience"
+  },
+  {
+    "id": "voc-146",
+    "deck": "vocabulary",
+    "front": "judicious",
+    "back": "showing good sense and sound judgment"
+  },
+  {
+    "id": "voc-147",
+    "deck": "vocabulary",
+    "front": "juxtapose",
+    "back": "to place side by side for contrast"
+  },
+  {
+    "id": "voc-148",
+    "deck": "vocabulary",
+    "front": "lament",
+    "back": "to express deep sorrow or regret"
+  },
+  {
+    "id": "voc-149",
+    "deck": "vocabulary",
+    "front": "latent",
+    "back": "present but hidden, not yet showing"
+  },
+  {
+    "id": "voc-150",
+    "deck": "vocabulary",
+    "front": "laud",
+    "back": "to praise highly"
+  },
+  {
+    "id": "voc-151",
+    "deck": "vocabulary",
+    "front": "lethargic",
+    "back": "sluggish; lacking energy"
+  },
+  {
+    "id": "voc-152",
+    "deck": "vocabulary",
+    "front": "levity",
+    "back": "lightheartedness, humor in a serious moment"
+  },
+  {
+    "id": "voc-153",
+    "deck": "vocabulary",
+    "front": "lucid",
+    "back": "clear and easy to understand"
+  },
+  {
+    "id": "voc-154",
+    "deck": "vocabulary",
+    "front": "magnanimous",
+    "back": "generous and forgiving, especially to a rival"
+  },
+  {
+    "id": "voc-155",
+    "deck": "vocabulary",
+    "front": "malevolent",
+    "back": "wishing harm on others"
+  },
+  {
+    "id": "voc-156",
+    "deck": "vocabulary",
+    "front": "myriad",
+    "back": "a huge number of something"
+  },
+  {
+    "id": "voc-157",
+    "deck": "vocabulary",
+    "front": "naive",
+    "back": "overly trusting or inexperienced"
+  },
+  {
+    "id": "voc-158",
+    "deck": "vocabulary",
+    "front": "narcissist",
+    "back": "someone excessively focused on themselves"
+  },
+  {
+    "id": "voc-159",
+    "deck": "vocabulary",
+    "front": "nascent",
+    "back": "just starting to develop"
+  },
+  {
+    "id": "voc-160",
+    "deck": "vocabulary",
+    "front": "negligent",
+    "back": "careless; failing to take proper care"
+  },
+  {
+    "id": "voc-161",
+    "deck": "vocabulary",
+    "front": "nonchalant",
+    "back": "casually unconcerned"
+  },
+  {
+    "id": "voc-162",
+    "deck": "vocabulary",
+    "front": "notorious",
+    "back": "famous for something bad"
+  },
+  {
+    "id": "voc-163",
+    "deck": "vocabulary",
+    "front": "novel",
+    "back": "new and original"
+  },
+  {
+    "id": "voc-164",
+    "deck": "vocabulary",
+    "front": "nuance",
+    "back": "a subtle difference in meaning or tone"
+  },
+  {
+    "id": "voc-165",
+    "deck": "vocabulary",
+    "front": "obsolete",
+    "back": "outdated; no longer used"
+  },
+  {
+    "id": "voc-166",
+    "deck": "vocabulary",
+    "front": "ominous",
+    "back": "giving a feeling that something bad is coming"
+  },
+  {
+    "id": "voc-167",
+    "deck": "vocabulary",
+    "front": "opaque",
+    "back": "impossible to see through, literally or figuratively"
+  },
+  {
+    "id": "voc-168",
+    "deck": "vocabulary",
+    "front": "ostentatious",
+    "back": "showy; meant to impress others"
+  },
+  {
+    "id": "voc-169",
+    "deck": "vocabulary",
+    "front": "paradox",
+    "back": "a statement that seems contradictory but may be true"
+  },
+  {
+    "id": "voc-170",
+    "deck": "vocabulary",
+    "front": "partisan",
+    "back": "strongly biased toward one side or party"
+  },
+  {
+    "id": "voc-171",
+    "deck": "vocabulary",
+    "front": "paucity",
+    "back": "a small, insufficient amount"
+  },
+  {
+    "id": "voc-172",
+    "deck": "vocabulary",
+    "front": "pedantic",
+    "back": "overly focused on minor details or rules"
+  },
+  {
+    "id": "voc-173",
+    "deck": "vocabulary",
+    "front": "penchant",
+    "back": "a strong liking or habitual tendency"
+  },
+  {
+    "id": "voc-174",
+    "deck": "vocabulary",
+    "front": "perfunctory",
+    "back": "done with minimal effort, just to get it over with"
+  },
+  {
+    "id": "voc-175",
+    "deck": "vocabulary",
+    "front": "peripheral",
+    "back": "on the edge; not central"
+  },
+  {
+    "id": "voc-176",
+    "deck": "vocabulary",
+    "front": "pervasive",
+    "back": "spreading through and present everywhere"
+  },
+  {
+    "id": "voc-177",
+    "deck": "vocabulary",
+    "front": "philanthropy",
+    "back": "donating money or time to help others"
+  },
+  {
+    "id": "voc-178",
+    "deck": "vocabulary",
+    "front": "pious",
+    "back": "deeply religious or devout"
+  },
+  {
+    "id": "voc-179",
+    "deck": "vocabulary",
+    "front": "placate",
+    "back": "to calm someone down, often by giving in a bit"
+  },
+  {
+    "id": "voc-180",
+    "deck": "vocabulary",
+    "front": "pragmatic",
+    "back": "practical; focused on what actually works"
+  },
+  {
+    "id": "voc-181",
+    "deck": "vocabulary",
+    "front": "precarious",
+    "back": "unstable; likely to fail or fall"
+  },
+  {
+    "id": "voc-182",
+    "deck": "vocabulary",
+    "front": "precedent",
+    "back": "an earlier case that sets the standard for later ones"
+  },
+  {
+    "id": "voc-183",
+    "deck": "vocabulary",
+    "front": "pretentious",
+    "back": "trying to seem more important or smart than you are"
+  },
+  {
+    "id": "voc-184",
+    "deck": "vocabulary",
+    "front": "prolific",
+    "back": "producing a lot, like work or offspring"
+  },
+  {
+    "id": "voc-185",
+    "deck": "vocabulary",
+    "front": "proximity",
+    "back": "closeness in space"
+  },
+  {
+    "id": "voc-186",
+    "deck": "vocabulary",
+    "front": "prudent",
+    "back": "careful and sensible about decisions"
+  },
+  {
+    "id": "voc-187",
+    "deck": "vocabulary",
+    "front": "punctilious",
+    "back": "extremely careful about small details or rules"
+  },
+  {
+    "id": "voc-188",
+    "deck": "vocabulary",
+    "front": "quandary",
+    "back": "a difficult situation with no easy choice"
+  },
+  {
+    "id": "voc-189",
+    "deck": "vocabulary",
+    "front": "querulous",
+    "back": "whiny and complaining"
+  },
+  {
+    "id": "voc-190",
+    "deck": "vocabulary",
+    "front": "rancor",
+    "back": "deep, bitter resentment"
+  },
+  {
+    "id": "voc-191",
+    "deck": "vocabulary",
+    "front": "rebuke",
+    "back": "to sharply criticize"
+  },
+  {
+    "id": "voc-192",
+    "deck": "vocabulary",
+    "front": "recalcitrant",
+    "back": "stubbornly resistant to authority or control"
+  },
+  {
+    "id": "voc-193",
+    "deck": "vocabulary",
+    "front": "reclusive",
+    "back": "avoiding other people; living in isolation"
+  },
+  {
+    "id": "voc-194",
+    "deck": "vocabulary",
+    "front": "redundant",
+    "back": "unnecessary because it repeats what's already there"
+  },
+  {
+    "id": "voc-195",
+    "deck": "vocabulary",
+    "front": "refute",
+    "back": "to prove something wrong"
+  },
+  {
+    "id": "voc-196",
+    "deck": "vocabulary",
+    "front": "relegate",
+    "back": "to move down to a lower rank or position"
+  },
+  {
+    "id": "voc-197",
+    "deck": "vocabulary",
+    "front": "relevant",
+    "back": "connected to the matter at hand"
+  },
+  {
+    "id": "voc-198",
+    "deck": "vocabulary",
+    "front": "remorse",
+    "back": "guilt over something you did wrong"
+  },
+  {
+    "id": "voc-199",
+    "deck": "vocabulary",
+    "front": "reprehensible",
+    "back": "deserving strong blame"
+  },
+  {
+    "id": "voc-200",
+    "deck": "vocabulary",
+    "front": "resilient",
+    "back": "able to bounce back from difficulty"
+  },
+  {
+    "id": "voc-201",
+    "deck": "vocabulary",
+    "front": "restrained",
+    "back": "held back; controlled"
+  },
+  {
+    "id": "voc-202",
+    "deck": "vocabulary",
+    "front": "reticent",
+    "back": "reluctant to speak much"
+  },
+  {
+    "id": "voc-203",
+    "deck": "vocabulary",
+    "front": "revere",
+    "back": "to deeply respect and admire"
+  },
+  {
+    "id": "voc-204",
+    "deck": "vocabulary",
+    "front": "rhetoric",
+    "back": "persuasive speaking or writing, sometimes more style than substance"
+  },
+  {
+    "id": "voc-205",
+    "deck": "vocabulary",
+    "front": "rigor",
+    "back": "strictness and thoroughness"
+  },
+  {
+    "id": "voc-206",
+    "deck": "vocabulary",
+    "front": "sagacious",
+    "back": "wise; showing good judgment"
+  },
+  {
+    "id": "voc-207",
+    "deck": "vocabulary",
+    "front": "sanction",
+    "back": "to officially approve something, OR to punish it — depends on context"
+  },
+  {
+    "id": "voc-208",
+    "deck": "vocabulary",
+    "front": "scrutinize",
+    "back": "to examine closely"
+  },
+  {
+    "id": "voc-209",
+    "deck": "vocabulary",
+    "front": "servile",
+    "back": "excessively eager to please; submissive"
+  },
+  {
+    "id": "voc-210",
+    "deck": "vocabulary",
+    "front": "skeptical",
+    "back": "doubtful; not easily convinced"
+  },
+  {
+    "id": "voc-211",
+    "deck": "vocabulary",
+    "front": "solemn",
+    "back": "serious and formal"
+  },
+  {
+    "id": "voc-212",
+    "deck": "vocabulary",
+    "front": "somber",
+    "back": "dark, gloomy, serious in mood"
+  },
+  {
+    "id": "voc-213",
+    "deck": "vocabulary",
+    "front": "sporadic",
+    "back": "happening occasionally, at irregular times"
+  },
+  {
+    "id": "voc-214",
+    "deck": "vocabulary",
+    "front": "spurious",
+    "back": "fake, though it looks genuine"
+  },
+  {
+    "id": "voc-215",
+    "deck": "vocabulary",
+    "front": "stagnant",
+    "back": "not moving or developing; stale"
+  },
+  {
+    "id": "voc-216",
+    "deck": "vocabulary",
+    "front": "static",
+    "back": "staying the same; not changing"
+  },
+  {
+    "id": "voc-217",
+    "deck": "vocabulary",
+    "front": "stoic",
+    "back": "calmly enduring hardship without showing feelings"
+  },
+  {
+    "id": "voc-218",
+    "deck": "vocabulary",
+    "front": "stringent",
+    "back": "very strict; tightly controlled"
+  },
+  {
+    "id": "voc-219",
+    "deck": "vocabulary",
+    "front": "subdued",
+    "back": "quiet; toned down"
+  },
+  {
+    "id": "voc-220",
+    "deck": "vocabulary",
+    "front": "succinct",
+    "back": "clearly expressed in few words"
+  },
+  {
+    "id": "voc-221",
+    "deck": "vocabulary",
+    "front": "superfluous",
+    "back": "more than what's needed; extra"
+  },
+  {
+    "id": "voc-222",
+    "deck": "vocabulary",
+    "front": "surreptitious",
+    "back": "done secretly, trying not to be noticed"
+  },
+  {
+    "id": "voc-223",
+    "deck": "vocabulary",
+    "front": "sycophant",
+    "back": "someone who flatters powerful people for favor"
+  },
+  {
+    "id": "voc-224",
+    "deck": "vocabulary",
+    "front": "taciturn",
+    "back": "naturally quiet; says little"
+  },
+  {
+    "id": "voc-225",
+    "deck": "vocabulary",
+    "front": "tenacious",
+    "back": "holding on firmly; doesn't give up"
+  },
+  {
+    "id": "voc-226",
+    "deck": "vocabulary",
+    "front": "terse",
+    "back": "short and to the point, sometimes almost rudely so"
+  },
+  {
+    "id": "voc-227",
+    "deck": "vocabulary",
+    "front": "timid",
+    "back": "easily frightened; shy"
+  },
+  {
+    "id": "voc-228",
+    "deck": "vocabulary",
+    "front": "tirade",
+    "back": "a long, angry speech of criticism"
+  },
+  {
+    "id": "voc-229",
+    "deck": "vocabulary",
+    "front": "transient",
+    "back": "lasting only a short time; temporary"
+  },
+  {
+    "id": "voc-230",
+    "deck": "vocabulary",
+    "front": "trepidation",
+    "back": "a fearful, nervous feeling about what's coming"
+  },
+  {
+    "id": "voc-231",
+    "deck": "vocabulary",
+    "front": "trite",
+    "back": "overused and unoriginal"
+  },
+  {
+    "id": "voc-232",
+    "deck": "vocabulary",
+    "front": "truncate",
+    "back": "to cut short or shorten"
+  },
+  {
+    "id": "voc-233",
+    "deck": "vocabulary",
+    "front": "ubiquitous",
+    "back": "seems to be everywhere at once"
+  },
+  {
+    "id": "voc-234",
+    "deck": "vocabulary",
+    "front": "unctuous",
+    "back": "fake-friendly in an oily, insincere way"
+  },
+  {
+    "id": "voc-235",
+    "deck": "vocabulary",
+    "front": "undermine",
+    "back": "to secretly weaken something"
+  },
+  {
+    "id": "voc-236",
+    "deck": "vocabulary",
+    "front": "unobtrusive",
+    "back": "not drawing attention to itself"
+  },
+  {
+    "id": "voc-237",
+    "deck": "vocabulary",
+    "front": "unprecedented",
+    "back": "never having happened before"
+  },
+  {
+    "id": "voc-238",
+    "deck": "vocabulary",
+    "front": "urbane",
+    "back": "polished, sophisticated, and socially smooth"
+  },
+  {
+    "id": "voc-239",
+    "deck": "vocabulary",
+    "front": "vacillate",
+    "back": "to keep switching back and forth between choices"
+  },
+  {
+    "id": "voc-240",
+    "deck": "vocabulary",
+    "front": "vehement",
+    "back": "forceful and intense, especially about feelings"
+  },
+  {
+    "id": "voc-241",
+    "deck": "vocabulary",
+    "front": "veneer",
+    "back": "a thin surface layer that hides what's underneath"
+  },
+  {
+    "id": "voc-242",
+    "deck": "vocabulary",
+    "front": "venerate",
+    "back": "to regard with deep, almost worshipful respect"
+  },
+  {
+    "id": "voc-243",
+    "deck": "vocabulary",
+    "front": "verbose",
+    "back": "using way more words than necessary"
+  },
+  {
+    "id": "voc-244",
+    "deck": "vocabulary",
+    "front": "viable",
+    "back": "workable; capable of succeeding"
+  },
+  {
+    "id": "voc-245",
+    "deck": "vocabulary",
+    "front": "vilify",
+    "back": "to say harsh, unfair things about someone"
+  },
+  {
+    "id": "voc-246",
+    "deck": "vocabulary",
+    "front": "vindicate",
+    "back": "to clear someone of blame; prove them right"
+  },
+  {
+    "id": "voc-247",
+    "deck": "vocabulary",
+    "front": "virtuoso",
+    "back": "someone with dazzling skill, especially in music"
+  },
+  {
+    "id": "voc-248",
+    "deck": "vocabulary",
+    "front": "virulent",
+    "back": "extremely harmful or hostile; fast-spreading and dangerous"
+  },
+  {
+    "id": "voc-249",
+    "deck": "vocabulary",
+    "front": "volatile",
+    "back": "prone to sudden, unpredictable change or outbursts"
+  },
+  {
+    "id": "voc-250",
+    "deck": "vocabulary",
+    "front": "whimsical",
+    "back": "playfully unusual or fanciful"
+  },
+  {
+    "id": "voc-251",
+    "deck": "vocabulary",
+    "front": "zealot",
+    "back": "someone fanatically devoted to a cause"
+  }
+]

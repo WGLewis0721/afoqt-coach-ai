@@ -7,7 +7,7 @@ from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
-from . import bank, llm, tracker
+from . import bank, flashcards, llm, tracker
 from .config import COMPOSITES, SUBTESTS, WEB_DIR
 from .knowledge_loader import retrieve, system_prompt
 
@@ -62,6 +62,11 @@ def knowledge(topic: str = "overview"):
     return {"topic": topic, "content": text or system_prompt()}
 
 
+@app.get("/api/flashcards")
+def get_flashcards(deck: str | None = None):
+    return {"decks": flashcards.decks(), "cards": flashcards.get_cards(deck)}
+
+
 @app.get("/api/readiness")
 def readiness():
     return tracker.readiness()
@@ -80,6 +85,7 @@ def make_quiz(body: QuizIn):
         extra = llm.generate_quiz_items(body.subtest, min(body.n, 5), body.difficulty) or []
         for i, item in enumerate(extra):
             item.setdefault("id", f"LLM-{body.subtest}-{i}")
+            item.setdefault("subtest", body.subtest)
             quiz["items"].append(item)
     QUIZ_CACHE[quiz["quiz_id"]] = quiz
     if len(QUIZ_CACHE) > 50:
